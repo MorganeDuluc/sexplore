@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  step: MyString
+  user: one
+  quizz: one
+
+two:
+  step: MyString
+  user: two
+  quizz: two
