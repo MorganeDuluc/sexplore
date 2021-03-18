@@ -1,7 +1,7 @@
 class ThemesController < ApplicationController
   def index
     if params[:query].present?
-      sql_query = "name ILIKE :query OR description ILIKE :query"
+      sql_query = "name ILIKE :query OR description ILIKE :query OR category ILIKE :query"
       @themes = Theme.where(sql_query, query: "%#{params[:query]}%")
     else
       @themes = Theme.all
