@@ -1,25 +1,44 @@
-<body class="background-color">
-  <div class="d-flex flex-column">
-    <div class="card">
-      <%= form_tag themes_path, method: :get do %>
-        <%= text_field_tag :query,
-          params[:query],
-          class: "search-bar"
-        %>
-        <%= submit_tag "S", class: "search-button" %>
-      <% end %>
-    </div>
+<div class="container background-color">
 
-    <div>
-      <div>
-        <% @themes.each do |theme| %>
-          <h4><%= theme.name %></h4>
-          <p><%= theme.description %></p>
-        <% end %>
+<%# <div class="card-search">
+  <div class="group-search-bar">
+    <%= form_tag themes_path, method: :get do %>
+    <%#= text_field_tag :query,
+    params[:query],
+    class: "search-bar"
+    %>
+    <%#= submit_tag <i class="fas fa-search"></i>, class: "search-button" %>
+    <%# end %>
+  <%# </div>
+</div> %>
+
+  <div class="card-search">
+    <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+      <div class="search-group">
+        <input class="search-bar string required" type="text" name="search[query]" id="search_query" />
+        <button name="button" type="submit" class="btn">
+          <i class="fas fa-search"></i>
+        </button>
       </div>
-    </div>
-
-
+    <% end %>
   </div>
 
-</body>
+  <%# <div>
+      <h3>Découvrir les thèmes</h3>
+      <div> %>
+        <%# @themes.each do |theme| %>
+  <%# <div class="card-themes"> %>
+  <%# <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /> %>
+  <%# <div class="card-themes-infos"> %>
+  <h4><%#= theme.name %></h4>
+  <p><%#= theme.description %></p>
+  <%# </div>
+          </div> %>
+  <%# end %>
+  <%# </div>
+    </div>
+
+    <div class= 'btn-principal'>
+    </div> %>
+
+</div>
