@@ -1,18 +1,9 @@
 <div class="container background-color">
 
-<%# <div class="card-search">
-  <div class="group-search-bar">
-    <%= form_tag themes_path, method: :get do %>
-    <%#= text_field_tag :query,
-    params[:query],
-    class: "search-bar"
-    %>
-    <%#= submit_tag <i class="fas fa-search"></i>, class: "search-button" %>
-    <%# end %>
-  <%# </div>
-</div> %>
-
   <div class="card-search">
+    <%= link_to root_path do %>
+      <i class="fas fa-arrow-left"></i>
+    <% end %>
     <%= simple_form_for :search, url: root_path, method: :get,html: {class:"form-input"}  do |f| %>
       <div class="search-form-control form-group">
         <input class="form-control string required" type="text" placeholder="Je tape ma recherche" name="search[query]" id="search_query" />
@@ -23,22 +14,22 @@
     <% end %>
   </div>
 
-  <%# <div>
+  <div>
       <h3>Découvrir les thèmes</h3>
-      <div> %>
-        <%# @themes.each do |theme| %>
-  <%# <div class="card-themes"> %>
-  <%# <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /> %>
-  <%# <div class="card-themes-infos"> %>
-  <h4><%#= theme.name %></h4>
-  <p><%#= theme.description %></p>
-  <%# </div>
-          </div> %>
-  <%# end %>
-  <%# </div>
+      <div>
+        <% @themes.each do |theme| %>
+  <div class="card-themes">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <div class="card-themes-infos">
+  <h4><%= theme.name %></h4>
+  <p><%= theme.description %></p>
+  </div>
+          </div>
+  <% end %>
+  </div>
     </div>
 
     <div class= 'btn-principal'>
-    </div> %>
+    </div>
 
 </div>

@@ -7,12 +7,14 @@
   background: #FFFFFF;
   border-radius: 0px 0px 50px 50px;
 }
+
 .form-input {
   position: relative;
-  top: 90px;
+  top: 50px;
   width: 335px;
   left: 20px;
   right: 20px;
+  margin-right: none;
 }
 
 .search-form-control {
@@ -55,8 +57,15 @@
 
 .btn {
   background-color: white;
+  margin-right: none;
 }
 
 .fa-search {
   color: #F2B69E;
+}
+
+.fa-arrow-left {
+  color: #B6E2FC;
+  margin-left: 20px;
+  margin-top: 20px;
 }
