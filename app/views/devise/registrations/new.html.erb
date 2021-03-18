@@ -2,7 +2,7 @@
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
-
+<%= resource.errors.full_messages %>
   <div class="form-inputs">
     <%= f.input :username,
                 required: true,
