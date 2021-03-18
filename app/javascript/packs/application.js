@@ -16,3 +16,13 @@ import "bootstrap";
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+
+  // const input = document.querySelector("#input-search");
+  // console.log(input)
+  // input.addEventListener("keyup", (e) => {
+  //   e.preventDefault()
+  //   console.log (input.value)
+  //   // e.current_value = input.dataset.formInput
+  //   // console.log(current_value);
+  // } )
