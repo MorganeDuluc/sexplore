@@ -1,2 +1,6 @@
 <h1>explainer2</h1>
-<%= link_to "suite", new_user_registration_path  %>
+<% if user_signed_in? %>
+ <%= link_to "suite", themes_path %>
+<% else %>
+<%= link_to "suite", new_user_registration_path %>
+<% end %>

@@ -7,7 +7,12 @@
     <h1 style="text-align: center;" class="title">Sexplore</h1>
   </div>
   <div class="btn-position">
-    <p class="btn-principal"><%= link_to "Je commence", explainer_one_path, style:"text-decoration: none;" %></p>
+    <% if user_signed_in? %>
+    <p class="btn-principal"><%= link_to "Je commence", themes_path %></p>
+    <% else %>
+    <p class="btn-principal"><%= link_to "Je commence", explainer_one_path %></p>
+    <% end %>
   </div>
   </div>
+  <%= link_to "Log out", destroy_user_session_path, :method => :delete %>
 </body>
