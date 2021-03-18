@@ -1,18 +1,19 @@
 <body>
   <div>
     <div class="card-chat">
-      <p></p>
+
     </div>
-      <div style="margin-left: 90px; margin-bottom: 60px;">
+      <div>
         <%= image_tag 'informafion.png', class: 'img-fion' %>
       </div>
     <div class="card-chat-blue">
-     <% if user_signed_in? %>
+      <% if user_signed_in? %>
       <%= link_to themes_path do %>
        <i class="fas fa-arrow-right"></i>
        <% end %>
      <% else %>
-      <%= link_to "suite", new_user_registration_path %>
+      <%= link_to new_user_registration_path %>
+        <i class="fas fa-arrow-right"></i>
      <% end %>
     </div>
   </div>
