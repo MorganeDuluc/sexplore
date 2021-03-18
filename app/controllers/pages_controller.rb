@@ -4,4 +4,9 @@ class PagesController < ApplicationController
   def home
   end
 
+  def explainer_one
+  end
+
+  def explainer_two
+  end
 end

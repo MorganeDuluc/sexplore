@@ -15,5 +15,6 @@ Rails.application.routes.draw do
   end
 
   # our statics pages
-  # get '/explainer', to: 'pages#explainer'
+  get '/explainer_one', to: 'pages#explainer_one'
+  get '/explainer_two', to: 'pages#explainer_two'
 end
