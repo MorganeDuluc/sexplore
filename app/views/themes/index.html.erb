@@ -1,6 +1,25 @@
-<div class="container">
-  <div class="card">
-    <div class="search-bar">
+<body class="background-color">
+  <div class="d-flex flex-column">
+    <div class="card">
+      <%= form_tag themes_path, method: :get do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "search-bar"
+        %>
+        <%= submit_tag "S", class: "search-button" %>
+      <% end %>
     </div>
+
+    <div>
+      <div>
+        <% @themes.each do |theme| %>
+          <h4><%= theme.name %></h4>
+          <p><%= theme.description %></p>
+        <% end %>
+      </div>
+    </div>
+
+
   </div>
-</div>
+
+</body>
