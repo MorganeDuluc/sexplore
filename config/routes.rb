@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     resources :questions, only: :show
     resources :responses, only: :show
     resources :user_quizzes, only: :show
-  # end
+  end
 
   # our statics pages
   # get '/explainer', to: 'pages#explainer'
