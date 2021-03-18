@@ -1,0 +1,11 @@
+<div class='card-videos'>
+  <h3>Choisi la vidéo qui t’attire</h3>
+    <% @videos.each do |video| %>
+      <div class="card-video">
+        <%= video.url, class: 'video' %>
+        <div class="card-video-infos">
+          <h4> <%= video.title %> </h4>
+        </div>
+      </div>
+    <% end %>
+</div>

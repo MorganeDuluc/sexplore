@@ -1,0 +1,27 @@
+.card-channel {
+  width: 335px;
+  height: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #B6E2FC;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+// .avatar-agora {
+
+// }
+
+.card-channel .card-channel-infos {
+  padding: 16px;
+}
+
+.card-channel-infos h4 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
