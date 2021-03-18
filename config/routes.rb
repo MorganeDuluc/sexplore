@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: 'pages#home'
-  authenticated :user do
+  # authenticated :user do
     resources :themes, only: [:index, :show] do
       resources :quizzes, only: :index do
         resources :user_quizzes, only: [:new, :create]
@@ -16,4 +16,4 @@ Rails.application.routes.draw do
 
   # our statics pages
   # get '/explainer', to: 'pages#explainer'
-end
+# end

@@ -1,11 +1,16 @@
 
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
 // External libraries
 @import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 // CSS partials
-@import "components/card";
-@import "components/search_bar";
-// @import "components/_background_home";
+@import "components/card-search";
+@import "components/_background_color";
 @import "components/_btn_primary";
 @import "components/_img_nude";
 @import "components/_title";
