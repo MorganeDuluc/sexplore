@@ -8,11 +8,11 @@
   </div>
   <div class="btn-position">
     <% if user_signed_in? %>
-    <p class="btn-principal"><%= link_to "Je commence", themes_path %></p>
+    <p class="btn-principal"><%= link_to "Je commence", themes_path, class: 'links' %></p>
     <% else %>
-    <p class="btn-principal"><%= link_to "Je commence", explainer_one_path %></p>
+    <p class="btn-principal"><%= link_to "Je commence", explainer_one_path, class: 'links'%></p>
     <% end %>
   </div>
   </div>
-  <%= link_to "Log out", destroy_user_session_path, :method => :delete %>
+  <%#= link_to "Log out", destroy_user_session_path, :method => :delete %>
 </body>
