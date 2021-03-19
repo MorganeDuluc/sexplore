@@ -1,4 +1,7 @@
+<h2>Choisi ton quiz</h2>
+
 <%= @theme.name %>
 <% @quizzes.each do |quiz| %>
-  <%= quiz.level %>
+ <p class='card-theme'> <%= quiz.title %> </p>
+ <%= link_to "quizz", "https://jrkrupa.typeform.com/to/vI4komao" %>
 <% end %>
