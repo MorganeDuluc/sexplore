@@ -1,1 +1,4 @@
 <%= @theme.name %>
+<% @quizzes.each do |quiz| %>
+  <%= quiz.level %>
+<% end %>
