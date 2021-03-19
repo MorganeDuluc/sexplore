@@ -1,6 +1,6 @@
 <div class="position background-color">
 
-  <div class="card-search">
+  <%# <div class="card-search"> %>
     <%= form_tag themes_path, class:"form-input", method: :get do %>
       <div class="search-form-control form-group">
         <%= text_field_tag :query, params[:query], placeholder: "Je tape ma recherche", class: "form-control" %>
@@ -10,34 +10,35 @@
         </button>
       </div>
     <% end %>
-  </div>
+  <%# </div> %>
 
   <div class="slide-part">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <a class="nav-link head tn active" id="home-tab" data-toggle="tab" href="#quiz" role="tab" aria-controls="trees" aria-selected="true">Quiz</a>
+          <a class="nav-link head tn active" id="home-tab" data-toggle="tab" href="#theme" role="tab" aria-controls="theme" aria-selected="true">Thème</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link head tn" id="resas-tab" data-toggle="tab" href="#agora" role="tab" aria-controls="resas" aria-selected="false">Agora</a>
+          <a class="nav-link head tn" id="resas-tab" data-toggle="tab" href="#agora" role="tab" aria-controls="agora" aria-selected="false">Agora</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link head tn" id="resas-tab" data-toggle="tab" href="#video" role="tab" aria-controls="resas" aria-selected="false">Vidéo</a>
+          <a class="nav-link head tn" id="resas-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">Vidéo</a>
         </li>
       </ul>
 
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="quiz" role="tabpanel" aria-labelledby="quiz-tab">
-          <%= render 'content_quiz' %>
+        <div class="tab-pane fade show active" id="theme" role="tabpanel" aria-labelledby="theme-tab">
+          <%= render 'content_theme', themes: @themes %>
+          <%#= render 'content_quiz', quizzes:@quizzes %>
         </div>
         <div class="tab-pane fade" id="agora" role="tabpanel" aria-labelledby="agora-tab">
-          <%#= render 'content_agora' %>
+          <%#= render 'content_agora', channels: @channels %>
         </div>
         <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
-          <%#= render 'content_video' %>
+          <%#= render 'content_video', videos: @videos %>
         </div>
       </div>
     </div>
-  
+
 </div>
 
  <%# <div class="card-search"> %>
