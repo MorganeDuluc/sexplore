@@ -1,11 +1,11 @@
 <div class='card-themes'>
   <h3>Choisi le quiz qui te donne des frissons<h3>
-    <% @themes.each do |theme| %>
+    <% quizzes.each do |quiz| %>
       <div class="card-theme">
         <%= image_tag 'corps.png', class: 'img-taille' %>
         <div class="card-theme-infos">
-          <h4> <%= theme.name %> </h4>
-          <p> <%= theme.description %> </p>
+          <h4> <%= quiz.level %> </h4>
+          <p> <%#= quiz.description %> </p>
         </div>
       </div>
     <% end %>
