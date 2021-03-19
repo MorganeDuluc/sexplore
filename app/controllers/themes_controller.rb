@@ -3,10 +3,9 @@ class ThemesController < ApplicationController
     if params[:query].present?
       sql_query = "name ILIKE :query OR description ILIKE :query"
       @themes = Theme.where(sql_query, query: "%#{params[:query]}%")
-      @tagline = "Choisi la vidéo qui t’attire"
     else
     @themes = Theme.all
-    @tagline = "découvre les dernière tendances"
+    @tagline = "Découvre les dernière tendances"
     end
   end
 
