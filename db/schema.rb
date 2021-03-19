@@ -10,10 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_16_161624) do
+ActiveRecord::Schema.define(version: 2021_03_19_100743) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "channels", force: :cascade do |t|
+    t.string "title"
+    t.bigint "theme_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["theme_id"], name: "index_channels_on_theme_id"
+    t.index ["user_id"], name: "index_channels_on_user_id"
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.text "content"
+    t.bigint "user_id", null: false
+    t.bigint "channel_id", null: false
+    t.integer "like_count"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["channel_id"], name: "index_comments_on_channel_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
+  end
 
   create_table "questions", force: :cascade do |t|
     t.text "content"
@@ -30,6 +51,8 @@ ActiveRecord::Schema.define(version: 2021_03_16_161624) do
     t.string "level"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "title"
+    t.string "question_number"
     t.index ["theme_id"], name: "index_quizzes_on_theme_id"
   end
 
@@ -75,9 +98,23 @@ ActiveRecord::Schema.define(version: 2021_03_16_161624) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "videos", force: :cascade do |t|
+    t.string "title"
+    t.string "url"
+    t.bigint "theme_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["theme_id"], name: "index_videos_on_theme_id"
+  end
+
+  add_foreign_key "channels", "themes"
+  add_foreign_key "channels", "users"
+  add_foreign_key "comments", "channels"
+  add_foreign_key "comments", "users"
   add_foreign_key "questions", "quizzes"
   add_foreign_key "quizzes", "themes"
   add_foreign_key "responses", "questions"
   add_foreign_key "user_quizzes", "quizzes"
   add_foreign_key "user_quizzes", "users"
+  add_foreign_key "videos", "themes"
 end
