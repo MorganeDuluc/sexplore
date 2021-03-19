@@ -9,4 +9,10 @@ class PagesController < ApplicationController
 
   def explainer_two
   end
+
+  def app
+    @themes = Theme.all
+    @channels = Channel.all
+    # @videos = Videos.all
+  end
 end
