@@ -27,13 +27,13 @@
 
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="quiz" role="tabpanel" aria-labelledby="quiz-tab">
-          <%= render 'content_quiz' %>
+          <%= render 'content_quiz', quizzes:@quizzes %>
         </div>
         <div class="tab-pane fade" id="agora" role="tabpanel" aria-labelledby="agora-tab">
-          <%= render 'content_agora' %>
+          <%#= render 'content_agora' %>
         </div>
         <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
-          <%= render 'content_video' %>
+          <%#= render 'content_video' %>
         </div>
       </div>
     </div>

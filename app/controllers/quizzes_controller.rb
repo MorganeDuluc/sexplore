@@ -1,6 +1,7 @@
 class QuizzesController < ApplicationController
   def index
     @theme = Theme.find(params[:theme_id])
+    @quizzes = @theme.quizzes
   end
 
   def show
