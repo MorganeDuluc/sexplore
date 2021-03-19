@@ -2,6 +2,7 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
+import { Application } from "stimulus"
 
 require("@rails/ujs").start()
 require("turbolinks").start()
@@ -26,3 +27,14 @@ import "bootstrap";
   //   // e.current_value = input.dataset.formInput
   //   // console.log(current_value);
   // } )
+import Carousel from "stimulus-carousel"
+import Swiper from 'swiper'
+import 'swiper/swiper-bundle.min.css'
+new Swiper()
+  const application = Application.start()
+  application.register("carousel", Carousel)
+
+document.addEventListener('turbolinks:load', () => {
+
+  });
+
