@@ -8,6 +8,18 @@
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "username" }%>
+
+    <div data-controller="carousel" class="swiper-container" id="carousel" data-carousel-options-value='{ "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><%= image_tag 'boxer.png', class: 'img-fion' %></div>
+        <div class="swiper-slide"><%= image_tag 'capote.png', class: 'img-fion' %></div>
+        <div class="swiper-slide"><%= image_tag 'clito.png', class: 'img-fion' %></div>
+        <div class="swiper-slide"><%= image_tag 'lèvres.png', class: 'img-fion' %></div>
+        <div class="swiper-slide"><%= image_tag 'seins.png', class: 'img-fion' %></div>
+        <div class="swiper-slide"><%= image_tag 'soutif.png', class: 'img-fion' %></div>
+        <div class="swiper-slide"><%= image_tag 'teub.png', class: 'img-fion' %></div>
+      </div>
+    </div>
     <%= f.input :password,
                 required: true,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
@@ -16,13 +28,6 @@
                 required: true,
                 input_html: { autocomplete: "new-password" } %>
   </div>
-    <div data-controller="carousel" class="swiper-container" data-carousel-options-value='{ "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-      </div>
-    </div>
   <div class="form-actions">
     <%= f.button :submit, "Sign up" %>
   </div>
