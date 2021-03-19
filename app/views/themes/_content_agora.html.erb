@@ -1,6 +1,6 @@
 <div class='cards-agora'>
-  <h3>Choisi la question que tu veux découvrir</h3>
-    <% @channels.each do |channel| %>
+  <h3><%= @tagline %></h3>
+    <% channels.each do |channel| %>
       <div class="card-channel">
         <%= image_tag 'corps.png', class: 'avatar-agora' %>
         <div class="card-channel-infos">
