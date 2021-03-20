@@ -30,10 +30,16 @@
         <div class="swiper-slide"><%= image_tag 'teub.png', class: 'img-fion' %></div>
       </div>
     </div>
+    <div class="password-div">
+      <p>Entre ton mot de passe</p>
+    </div>
     <%= f.input :password,
                 required: true,
                 label: false,
                 input_html: { autocomplete: "new-password", class: "password-bar" } %>
+    <div class="password-div">
+      <p>Confirme ton mot de passe</p>
+    </div>
     <%= f.input :password_confirmation,
                 required: true,
                 label: false,
