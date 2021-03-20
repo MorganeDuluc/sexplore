@@ -38,12 +38,10 @@
                 required: true,
                 input_html: { autocomplete: "new-password", class: "registration-bar" } %>
   </div>
-  <div class="form-actions">
     <div class="btn-position">
-      <%= f.button :submit, "Je me connecte", class: "btn-principal" %>
+      <%= f.button :submit, "Je m'inscris", id: "btn-principal-connection" %>
+    <%= render "devise/shared/links" %>
     </div>
-  </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
 
