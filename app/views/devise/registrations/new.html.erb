@@ -1,7 +1,7 @@
 <div id="card-chat-small">
   <p>Choisi ton pseudo</p>
 </div>
-<div ">
+<div>
   <%= image_tag 'informafion.png', id: "img-fion-small" %>
 </div>
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -16,7 +16,7 @@
     <div id="card-chat-small">
       <p>Choisi ton avatar</p>
     </div>
-    <div ">
+    <div id="div-fion">
       <%= image_tag 'informafion.png', id: "img-fion-small" %>
     </div>
     <div data-controller="carousel" class="swiper-container" id="carousel" data-carousel-options-value='{ "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
@@ -30,18 +30,25 @@
         <div class="swiper-slide"><%= image_tag 'teub.png', class: 'img-fion' %></div>
       </div>
     </div>
+    <div class="password-div">
+      <p>Entre ton mot de passe</p>
+    </div>
     <%= f.input :password,
                 required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
+                label: false,
+                input_html: { autocomplete: "new-password", class: "password-bar" } %>
+    <div class="password-div">
+      <p>Confirme ton mot de passe</p>
+    </div>
     <%= f.input :password_confirmation,
                 required: true,
-                input_html: { autocomplete: "new-password" } %>
+                label: false,
+                input_html: { autocomplete: "new-password", class: "password-bar" } %>
   </div>
-  <div class="form-actions">
-    <%= f.button :submit, "Je me" %>
-  </div>
+    <div class="btn-position">
+      <%= f.button :submit, "Je m'inscris", id: "btn-principal-connection" %>
+    <%= render "devise/shared/links" %>
+    </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
 
