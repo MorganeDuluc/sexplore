@@ -1,13 +1,17 @@
-<h2>Sign up</h2>
-
+<div id="card-chat-small">
+  <p>Choisi ton pseudo</p>
+</div>
+<div ">
+  <%= image_tag 'informafion.png', id: "img-fion-small" %>
+</div>
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
   <div class="form-inputs">
     </div>
-    <%= f.input :username,
+    <%= f.input :pseudo,
                 required: true,
                 autofocus: true,
-                input_html: { autocomplete: "username" }%>
+                input_html: { autocomplete: "pseudo" }%>
 
     <div data-controller="carousel" class="swiper-container" id="carousel" data-carousel-options-value='{ "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
       <div class="swiper-wrapper">
@@ -29,7 +33,7 @@
                 input_html: { autocomplete: "new-password" } %>
   </div>
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, "Je me" %>
   </div>
 <% end %>
 
