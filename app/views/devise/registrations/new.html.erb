@@ -10,8 +10,9 @@
     </div>
     <%= f.input :pseudo,
                 required: true,
+                label: false,
                 autofocus: true,
-                input_html: { autocomplete: "pseudo" }%>
+                input_html: { autocomplete: "pseudo", class: "registration-bar" }%>
 
     <div data-controller="carousel" class="swiper-container" id="carousel" data-carousel-options-value='{ "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
       <div class="swiper-wrapper">
