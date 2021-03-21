@@ -1,12 +1,12 @@
+User.destroy_all
 Theme.destroy_all
 Quiz.destroy_all
 Question.destroy_all
-User.destroy_all
 Response.destroy_all
 Channel.destroy_all
 Video.destroy_all
 
-# puts "seeds begins"
+puts "seeds begins"
 
 User.create!(username: "Test", email: "test@test.com", password: "azerty")
 
