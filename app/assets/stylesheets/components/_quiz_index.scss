@@ -1,0 +1,100 @@
+.quiz-side {
+  margin-top: 280px;
+  margin-left: 20px;
+}
+
+.quiz-side h3 {
+  color: #A4A4A4;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.card-quiz-unlock {
+  position: relative;
+  width: 335px;
+  height: 90px;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #B6E2FC;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.card-quiz-unlock-infos {
+  position: absolute;
+  margin-left: 60px;
+}
+
+.card-quiz-unlock-infos h4 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 27px;
+  margin-bottom: 1px;
+  color: black;
+}
+
+.card-quiz-unlock-infos p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.card-quiz-lock {
+  position: relative;
+  width: 335px;
+  height: 90px;
+  margin-top: 30px;
+  background-color: #F3F3F3;
+  border-radius: 8px;
+  border: 1px solid #DDDDDD;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.card-quiz-lock-infos {
+  position: absolute;
+  margin-left: 60px;
+}
+
+.card-quiz-lock-infos h4 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 27px;
+  margin-bottom: 1px;
+  color: #565656;
+}
+
+.card-quiz-lock-infos p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 30px;
+  color: #ACACAC;
+}
+
+.fa-check {
+  color: #BFFCB6;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.fa-lock {
+  color: #DDDDDD;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+}

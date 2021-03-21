@@ -1,0 +1,25 @@
+.nav-tabs {
+  border-bottom: 1px solid white;
+}
+
+.nav-link {
+  color: black;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.nav-tabs .nav-link.active {
+  color: #B6E2FC;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  background-color: #FFE5DB;
+  border-color:#FFE5DB;
+}
+
+.nav-tabs .nav-link:hover {
+  border-bottom: 2px solid #B6E2FC;
+}
