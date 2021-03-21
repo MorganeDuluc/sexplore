@@ -1,0 +1,68 @@
+.question-side {
+  margin-top: 280px;
+  margin-left: 20px;
+}
+
+.question-side h5 {
+  color: #AE6E4B;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.card-channel {
+  position: relative;
+  width: 335px;
+  height: 200px;
+  margin-top: 30px;
+  background-color: #AD6C80;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  border: none;
+}
+
+.card-channel-infos {
+  position: absolute;
+  margin-left: 60px;
+}
+
+.card-channel-infos .top-infos h4 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 27px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.card-channel-infos .top-infos p {
+  font-family: 'Maven Pro',
+  sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+
+.card-channel-infos .bottom-infos p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.comment-part {
+  position: absolute;
+  width: 335px;
+  height: 50px;
+  color: white;
+  margin-top: 30px;
+  border: 1px solid #AD6C80;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+}

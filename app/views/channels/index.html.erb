@@ -1,0 +1,40 @@
+<div class="background-color">
+
+  <div class="card-search position">
+      <%#= link_to request.referer.present? ? request.referer : default_path do %>
+        <i class="fas fa-arrow-left"></i>
+      <%#end%>
+      <%= form_tag themes_path, class:"form-input", method: :get do %>
+        <div class="search-form-control form-group">
+          <%= text_field_tag :query, params[:query], placeholder: "Je tape ma recherche", class: "form-control" %>
+          <button name="button" type="submit" class="btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      <% end %>
+  </div>
+
+  <div class='question-side'>
+    <h5>Agora<h5>
+    <% @channels.each do |channel| %>
+      <%= link_to channel_path(channel) do %>
+        <div class="card-channel">
+          <%#= image_tag 'corps.png', class: 'avatar' %>
+          <div class="card-channel-infos">
+            <div class="top-infos">
+              <h4> Username <%#= user.username %> </h4>
+              <p>Il y a trois jours</p>
+            </div>
+            <div class="bottom-infos">
+              <p> <%= channel.title %> </p>
+            </div>
+            <div class="comment-part">
+              <%# input %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+</div>

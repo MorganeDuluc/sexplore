@@ -12,6 +12,8 @@ Rails.application.routes.draw do
     resources :questions, only: :show
     resources :responses, only: :show
     resources :user_quizzes, only: :show
+    resources :channels, only: [:index, :show]
+    resources :videos, only: :index
   end
 
   # our statics pages
