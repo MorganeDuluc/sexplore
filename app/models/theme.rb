@@ -3,5 +3,5 @@ class Theme < ApplicationRecord
   has_many :channels, dependent: :destroy
   has_many :videos, dependent: :destroy
 
-  validates :name, :category, :description, presence: true
+  validates :name, :description, presence: true
 end
