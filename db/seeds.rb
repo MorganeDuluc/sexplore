@@ -1,6 +1,6 @@
 Theme.destroy_all
-Quiz.destroy_all
 Question.destroy_all
+Quiz.destroy_all
 User.destroy_all
 Response.destroy_all
 Channel.destroy_all
