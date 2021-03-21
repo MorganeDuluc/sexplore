@@ -1,16 +1,18 @@
-<div class="position background-color">
+<div class="background-color">
 
-  <%# <div class="card-search"> %>
-    <%= form_tag themes_path, class:"form-input", method: :get do %>
-      <div class="search-form-control form-group">
-        <%= text_field_tag :query, params[:query], placeholder: "Je tape ma recherche", class: "form-control" %>
-        <%#= submit_tag "s", class: "btn"%>
-        <button name="button" type="submit" class="btn">
-          <i class="fas fa-search"></i>
-        </button>
-      </div>
-    <% end %>
-  <%# </div> %>
+  <div class="card-search position">
+      <%#= link_to request.referer.present? ? request.referer : default_path do %>
+        <i class="fas fa-arrow-left"></i>
+      <%#end%>
+      <%= form_tag themes_path, class:"form-input", method: :get do %>
+        <div class="search-form-control form-group">
+          <%= text_field_tag :query, params[:query], placeholder: "Je tape ma recherche", class: "form-control" %>
+          <button name="button" type="submit" class="btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      <% end %>
+  </div>
 
   <div class="slide-part">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
