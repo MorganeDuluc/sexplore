@@ -33,15 +33,101 @@
 
 }
 
-.test {
+
+#img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+
+#boxer {
   background-image: url("boxer.png");
   background-size: 71%;
   background-repeat: no-repeat;
-  height: 80px;
-  width: 80px;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
   background-position: center;
   background-color: white;
-  padding: 0px;
   border-radius: 50%;
-  border: 1px solid #b6e2fc;
+}
+#soutif {
+  background-image: url("soutif.png");
+  background-size: 71%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: center;
+  background-color: white;
+  border-radius: 50%;
+}
+#clito {
+  background-image: url("clito.png");
+  background-size: 71%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: center;
+  background-color: white;
+  border-radius: 50%;
+}
+#lèvres {
+  background-image: url("lèvres.png");
+  background-size: 71%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: center;
+  background-color: white;
+  border-radius: 50%;
+}
+#capote {
+  background-image: url("capote.png");
+  background-size: 71%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: center;
+  background-color: white;
+  border-radius: 50%;
+}
+#teub {
+  background-image: url("teub.png");
+  background-size: 63%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: center;
+  background-color: white;
+  border-radius: 50%;
+}
+#seins {
+  background-image: url("seins.png");
+  background-size: 71%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: center;
+  background-color: white;
+  border-radius: 50%;
 }
