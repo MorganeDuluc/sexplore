@@ -30,9 +30,19 @@ import "bootstrap";
 import Carousel from "stimulus-carousel"
 import Swiper from 'swiper'
 import 'swiper/swiper-bundle.min.css'
-new Swiper()
-  const application = Application.start()
-  application.register("carousel", Carousel)
+
+const swiper = new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  loop: false,
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+
+});
+
+const application = Application.start()
+application.register("carousel", Carousel)
 
 document.addEventListener('turbolinks:load', () => {
 

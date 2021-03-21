@@ -1,7 +1,17 @@
 #carousel {
-  padding-top: 40px;
+  padding-top: 16px;
+  padding-bottom: 8px;
 }
 
 .swiper-wrapper {
   text-align: center;
+}
+
+#swiper-button-prev{
+  top: 315px;
+  color: #b6e2fc;
+}
+#swiper-button-next {
+  top: 315px;
+  color: #92d7ff;
 }
