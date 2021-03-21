@@ -24,3 +24,24 @@
 #div-fion {
   height:20px;
 }
+
+.img-avatar {
+  width: 67px;
+  height: 64px;
+  position: relative;
+  bottom: 30px;
+
+}
+
+.test {
+  background-image: url("boxer.png");
+  background-size: 71%;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 80px;
+  background-position: center;
+  background-color: white;
+  padding: 0px;
+  border-radius: 50%;
+  border: 1px solid #b6e2fc;
+}
