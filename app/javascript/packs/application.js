@@ -29,12 +29,11 @@ import "bootstrap";
   // } )
 import Carousel from "stimulus-carousel"
 import Swiper from 'swiper'
-import 'swiper/swiper-bundle.css'
-import 'components/navigation/navigation.scss'
+import 'swiper/swiper-bundle.min.css'
 
 const swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   navigation: {
   nextEl: '.swiper-button-next',
   prevEl: '.swiper-button-prev',
