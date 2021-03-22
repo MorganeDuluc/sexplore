@@ -15,6 +15,9 @@
 .btn-position {
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 90px;
+  margin-left: 23px;
 }
 
 a.active {
@@ -32,6 +35,6 @@ a.active {
   padding: 14px 22px;
   color: white;
   font-size: 16px;
-  margin-top: 20px;
+  margin-top: 38px;
   font-family: 'Maven Pro', sans-serif;
 }

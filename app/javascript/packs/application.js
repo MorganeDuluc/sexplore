@@ -48,3 +48,6 @@ document.addEventListener('turbolinks:load', () => {
 
   });
 
+document.getElementById( "boxer" ).onclick = function() {
+
+};
