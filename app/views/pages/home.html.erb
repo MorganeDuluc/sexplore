@@ -8,7 +8,7 @@
   </div>
   <div class="btn-position">
     <% if user_signed_in? %>
-      <%= link_to "Je commence", themes_path, class: 'btn-principal links' %>
+      <%= link_to "Je commence", app_path, class: 'btn-principal links' %>
       <%= button_to "Log out", destroy_user_session_path, method: :delete %>
     <% else %>
       <%= link_to "Je commence", explainer_one_path, class: 'btn-principal links'%>
