@@ -33,7 +33,6 @@ Quiz.create!(title: "Le consentement", theme_id: Theme.first.id)
 Quiz.create!(title: "Le sexe non-pénétratif", theme_id: Theme.first.id)
 Quiz.create!(title: "Le sexe pénétratif", theme_id: Theme.first.id)
 
-
 q1 = Question.create!(content: "Ma première fois va être...", order: 1, quiz_id: Quiz.first.id)
 q2 = Question.create!(content: "Mon/ma partenaire a plus d'expérience que moi, il/elle doit donc prendre le dessus.", order: 2, quiz_id: Quiz.first.id)
 q3 = Question.create!(content: "J'ai vraiment envie de faire l'amour, mais je sens que mon/ma partenaire a des doutes.", order: 3, quiz_id: Quiz.first.id)
@@ -42,6 +41,8 @@ q5 = Question.create!(content: "Je suis sûr(e) de vouloir perdre ma virginité 
 
 Response.create!(content: "Comme dans ces films romantiques, où ce moment est vraiment agréable, magique et reste mémorable", result: false, question: q1, explication: "Tu ne sais pas conduire une voiture dès la première fois ? Pour le sexe c'est pareil, ça s'apprend ! Avec le temps ça deviendra de plus en plus naturel et agréable. La première fois n'est souvent pas ce que nous pensons. Cela peut être surprenant, tu vas te découvrir, être maladroit(e) dans tes gestes et ce ne sera pas toujours agréable. Pour les filles, certaines ont mal, d'autres non, certaines saignent, d'autres non (mais ne t'attends pas à avoir un saignement tel que tes règles). Pour les garçons, oubliaient la pénétration qui dure. L'acte pénétratif sera court et rapide. Mais n'oublies pas, ce n'est pas grave, ce sera de plus en plus agréable avec le temps. Ce qui est surtout important est la COMMUNICATION avec ton/ta partenaire, le respect mutuel, l'écoute, l'observation. Tu ne commenceras pas de suite par du sexe pénétratif, penses au PLAISIR que tu peux DONNER et RECEVOIR lors du sexe non-pénétratif. Le corps entier est une zone étérogène. Prends ton temps, du plaisir et n'hésites pas à dire à ton/ta partenaire ce que tu apprécies. Découvres toi petit à petit, il est important que tu te connaisses et que tu saches ce que tu aimes ou non. Ne dis JAMAIS oui à ce qui ne t'apporte pas de plaisir, COMMUNIQUE, exprime tes ressentis auprès que ton/ta partenaire sexuel, que tu sois en couple ou non.")
 Response.create!(content: "Trop cool, je vais pouvoir tester des positions comme j'ai pu le voir sur internet.", result: false, question: q1, explication: "toto")
+
+
 Response.create!(content: "Sympa je vais enfin savoir ce que ça fait de jouïr.", result: false, question: q1, explication: "toto")
 Response.create!(content: "Surprenant !", result: true, question: q1, explication: "toto")
 
