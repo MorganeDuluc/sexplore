@@ -13,15 +13,21 @@
     <h3>Bienvenue dans le thème: <strong><%= @theme.name %></strong></h3>
     <% @quizzes.each do |quiz| %>
       <div class="card-quiz-unlock">
+        <% if quiz.questions.present? %>
+          <% link = question_path(quiz.questions.first) %>
+        <% else %>
+          <% link = root_path %>
+        <% end %>
+
+        <%= link_to link do %>
         <%#= link_to "https://jrkrupa.typeform.com/to/vI4komao" do %>
       <%#= if  quiz.finished == true do %>
-        <i class="fas fa-check"></i>
-        <div class="card-quiz-unlock-infos">
-          <h4> <%= quiz.title %> </h4>
-          <p> 5 questions - 10 minutes </p>
-        </div>
-        <% quiz.class %>
-        <%= link_to 'first_question', question_path(quiz.questions.first) %>
+          <i class="fas fa-check"></i>
+          <div class="card-quiz-unlock-infos">
+            <h4> <%= quiz.title %> </h4>
+            <p> 5 questions - 10 minutes </p>
+          </div>
+        <% end %>
       </div>
     <% end %>
   </div>
