@@ -253,8 +253,8 @@ DEPENDENCIES
   capybara (>= 2.15)
   cloudinary (~> 1.16.0)
   devise (~> 4.7)
-  font-awesome-sass (~> 5.6.1)
   dotenv-rails
+  font-awesome-sass (~> 5.6.1)
   jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
