@@ -11,8 +11,15 @@ class PagesController < ApplicationController
   end
 
   def app
-    @themes = Theme.all
-    @channels = Channel.all
-    # @videos = Videos.all
+    if params[:query].present?
+      @themes = Theme.search_by_name_and_description(params[:query])
+      @channels = Channel.search_by_title(params[:query])
+      @videos = Video.search_by_title(params[:query])
+    else
+      @themes = Theme.all
+      @channels = Channel.all
+      @videos = Video.all
+      @tagline = "Découvre les dernière tendances"
+    end
   end
 end
