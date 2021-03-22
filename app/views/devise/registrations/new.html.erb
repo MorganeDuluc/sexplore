@@ -1,4 +1,4 @@
-<div id="card-chat-small">
+<div id="card-chat-pseudo">
   <p>Choisi ton pseudo</p>
 </div>
 <div>
@@ -13,7 +13,7 @@
                 label: false,
                 autofocus: true,
                 input_html: { autocomplete: "pseudo", class: "registration-bar" }%>
-    <div id="card-chat-small">
+    <div id="card-chat-avatar">
       <p>Choisi ton avatar</p>
     </div>
     <div id="div-fion">
@@ -44,21 +44,11 @@
         </div>
       </div>
     </div>
-    <div class="password-div">
-      <p>Entre ton mot de passe</p>
-    </div>
     <%= f.input :password,
                 required: true,
                 label: false,
+                placeholder: 'Entre ton mot de passe',
                 input_html: { autocomplete: "new-password", class: "password-bar" } %>
-    <div class="password-div">
-      <p>Confirme ton mot de passe</p>
-    </div>
-    <%= f.input :password_confirmation,
-                required: true,
-                label: false,
-                input_html: { autocomplete: "new-password", class: "password-bar" } %>
-  </div>
     <div class="btn-position">
       <%= f.button :submit, "Je m'inscris", id: "btn-principal-connection" %>
     <%= render "devise/shared/links" %>
