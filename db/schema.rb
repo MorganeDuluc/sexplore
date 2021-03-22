@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_22_110847) do
+ActiveRecord::Schema.define(version: 2021_03_22_143235) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 2021_03_22_110847) do
     t.bigint "quiz_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "explication"
     t.index ["quiz_id"], name: "index_questions_on_quiz_id"
   end
 
@@ -62,16 +63,23 @@ ActiveRecord::Schema.define(version: 2021_03_22_110847) do
     t.bigint "question_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.text "explication"
     t.index ["question_id"], name: "index_responses_on_question_id"
   end
 
   create_table "themes", force: :cascade do |t|
     t.string "name"
-    t.string "category"
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "user_quiz_responses", force: :cascade do |t|
+    t.bigint "response_id", null: false
+    t.bigint "user_quiz_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["response_id"], name: "index_user_quiz_responses_on_response_id"
+    t.index ["user_quiz_id"], name: "index_user_quiz_responses_on_user_quiz_id"
   end
 
   create_table "user_quizzes", force: :cascade do |t|
@@ -113,6 +121,8 @@ ActiveRecord::Schema.define(version: 2021_03_22_110847) do
   add_foreign_key "questions", "quizzes"
   add_foreign_key "quizzes", "themes"
   add_foreign_key "responses", "questions"
+  add_foreign_key "user_quiz_responses", "responses"
+  add_foreign_key "user_quiz_responses", "user_quizzes"
   add_foreign_key "user_quizzes", "quizzes"
   add_foreign_key "user_quizzes", "users"
   add_foreign_key "videos", "themes"
