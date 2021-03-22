@@ -4,9 +4,9 @@
       <%#= link_to request.referer.present? ? request.referer : default_path do %>
         <i class="fas fa-arrow-left"></i>
       <%#end%>
-      <%= form_tag themes_path, class:"form-input", method: :get do %>
+      <%= form_tag app_path, class:"form-input", method: :get do %>
         <div class="search-form-control form-group">
-          <%= text_field_tag :query, params[:query], placeholder: "Je tape ma recherche", class: "form-control" %>
+          <%= text_field_tag :query, params[:query],  class: "form-control", placeholder: "Je tape ma recherche" %>
           <button name="button" type="submit" class="btn">
             <i class="fas fa-search"></i>
           </button>
@@ -38,6 +38,10 @@
           <%= render 'videos/content_video', videos: @videos %>
         </div>
       </div>
+    </div>
+
+    <div class="nav">
+      <%= render "shared/navbar" %>
     </div>
 
 </div>

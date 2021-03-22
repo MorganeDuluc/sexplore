@@ -13,7 +13,7 @@ User.create!(username: "Test", email: "test@test.com", password: "azerty")
 Theme.create!(name: "Le Plaisir", description: "Le plaisir est l'essence même des rapports sexuels. L'orgasme n'est pas LE but ultime à atteindre.")
 Theme.create!(name: "Les MST/IST", description: "Tu connais les MST et tu sais comment t'en protéger, désormais, aprends-en plus sur les IST.")
 Theme.create!(name: "L'acte sexual", description: "Le sexe ne se limite pas à la pénétration vaginale. Découvre les plaisirs du sexe non-pénétratif.")
-Theme.create!(name: "La première fois", description: "La première fois, ne se passe pas forcément comme tu l'as prévu et peut être angoissante. Trouves les réponses à tes questions les plus intimes.")
+Theme.create!(name: "La première fois", description: "La première fois, ne se passe pas forcément comme tu l'as prévu et peut être angoissante.")
 
 Channel.create!(title: "Faut-il toujours jouïr lors d'un rapport ?", user_id: User.first.id, theme_id: Theme.first.id)
 Channel.create!(title: "La première fois fait-elle toujours mal ?", user_id: User.first.id, theme_id: Theme.first.id)
