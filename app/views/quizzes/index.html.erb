@@ -1,24 +1,29 @@
 <div class="background-color">
 
   <div class="card-search position">
-      <%#= link_to request.referer.present? ? request.referer : default_path do %>
+      <%= link_to request.referer.present? ? request.referer : default_path do %>
         <i class="fas fa-arrow-left"></i>
-      <%#end%>
+        <% end %>
+        <div class="card-chat-quiz">
+      <%= image_tag 'informafion-ring.png', class: 'img-fion-quiz' %>
+    </div>
   </div>
 
   <div class="quiz-side">
     <h3>Bienvenue dans le thème: <strong><%= @theme.name %></strong></h3>
     <% @quizzes.each do |quiz| %>
-      <%#= link_to "https://jrkrupa.typeform.com/to/vI4komao" %>
+      <div class="card-quiz-unlock">
+        <%= link_to "https://jrkrupa.typeform.com/to/vI4komao" do %>
       <%#= if  quiz.finished == true do %>
-        <div class="card-quiz-unlock">
           <i class="fas fa-check"></i>
-          <div class="card-quiz-unlock-infos">
-            <h4> <%= quiz.title %> </h4>
+            <div class="card-quiz-unlock-infos">
+              <h4> <%= quiz.title %> </h4>
             <p> 5 questions - 10 minutes </p>
           </div>
-        </div>
-
+        <% end %>
+      </div>
+    <% end %>
+  </div>
       <%#= else %>
         <%# <div class="card-quiz-lock">
           <i class="fas fa-lock"></i>
@@ -27,8 +32,5 @@
             <%# <p> 5 questions - 10 minutes </p>
           </div>
         </div> %>
-
-    <% end %>
   </div>
-
 </div>
