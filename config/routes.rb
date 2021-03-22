@@ -9,7 +9,9 @@ Rails.application.routes.draw do
       end
     end
     resources :quizzes, only: :show
-    resources :questions, only: :show
+    resources :questions, only: :show do
+      resources :responses, only: :create
+    end
     resources :responses, only: :show
     resources :user_quizzes, only: :show
     resources :channels, only: [:index, :show]

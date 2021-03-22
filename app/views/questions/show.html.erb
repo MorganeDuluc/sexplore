@@ -1,8 +1,8 @@
 <!-- question affichée -->
-
+<%= questions.first %>
 <!-- réponses proposées -->
-<% @responses.each do |response| %>
-  <%= response.content %>
+<%= simple_form_for @question, Response.new do |f| %>
+  <%= f.input :answer %>
 <% end %>
 
 <!-- toggle bouton pour clicker -->
