@@ -1,13 +1,16 @@
-.navbar {
+.card-fixed {
   background-color: white;
-  justify-content: space-between;
   border: 1px solid #AD6C80;
   border-radius: 16px 16px 0px 0px;
   width: 375px;
-  height: 80px;
-
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-around;
 }
 
-.navbar .why {
+.nav-link {
   flex-grow: 0;
+  // color: #AD6C80;
 }
+

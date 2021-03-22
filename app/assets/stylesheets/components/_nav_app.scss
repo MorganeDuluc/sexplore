@@ -13,13 +13,24 @@
   font-family: 'Maven Pro', sans-serif;
   font-weight: 700;
   font-size: 20px;
+  border-bottom: 2px solid #B6E2FC;
+  border-color: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.nav-tabs .nav-link {
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   background-color: #FFE5DB;
-  border-color:#FFE5DB;
 }
 
 .nav-tabs .nav-link:hover {
   border-bottom: 2px solid #B6E2FC;
 }
+
