@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: 'pages#home'
   authenticated :user do
-    resources :themes, only: [:index, :show] do
+    resources :themes, only: :index do
       resources :quizzes, only: :index do
         resources :user_quizzes, only: [:new, :create]
       end
