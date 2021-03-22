@@ -20,26 +20,27 @@
       <%= image_tag 'informafion.png', id: "img-fion-small" %>
     </div>
     <div data-controller="carousel" class="swiper-container" id="carousel" data-carousel-options-value='{ "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
+      <%= f.hidden_field :avatar %>
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-value="boxer">
           <div id="boxer"></div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-value="soutif">
           <div id="soutif"></div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-value="seins">
           <div id="seins"></div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-value="capote">
           <div id="capote"></div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-value="clito">
           <div id="clito"></div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-value="lèvres">
           <div id="lèvres"></div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-value="teub">
           <div id="teub"></div>
         </div>
       </div>
