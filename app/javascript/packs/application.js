@@ -8,7 +8,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-import "controllers"
+import "controllers";
 import "bootstrap";
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -18,50 +18,24 @@ import "bootstrap";
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-  const input = document.querySelector("mettre class de l'input");
+import Carousel from "stimulus-carousel";
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.min.css';
 
-  // fetch("est-il possible de mettre le seed")
-  //   .then(response => response.json())
-  //   .then((data) => {
-  //     data.Search.forEach((result) => {
-  //       const movieTag = `<li class="list-inline-item">
-  //         <img src="${result.Poster}" alt="">
-  //         <p>${result.Title}</p>
-  //       </li>`;
-  //       results.insertAdjacentHTML("beforeend", movieTag);
-  //     });
-  //   });
-
-
-// "récupérer la valeur de text_field_tag"
-// "avec cette valeur rechercher les themes, channel et video qui ont l'input"
-// input.addEventListener('keyup', (event) => {
-//   event.preventDefault();
-//   const input = event.currentTarget.querySelector(".mettre la class de l'input");
-//     inputs.forEach((input)) => {
-//       "faire le code de app"
-//     }
-//   input.innerHTML = '';
-//   "recherche theme, agora, video" (input.value);
-// });
-
-
-import Carousel from "stimulus-carousel"
-import Swiper from 'swiper'
-import 'swiper/swiper-bundle.min.css'
 
 // const swiper = new Swiper('.swiper-container', {
-//   direction: 'horizontal',
-//   loop: false,
-//   navigation: {
-//   nextEl: '.swiper-button-next',
-//   prevEl: '.swiper-button-prev',
-// },
+  //   direction: 'horizontal',
+  //   loop: false,
+  //   navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
 
-// });
-
-document.addEventListener('turbolinks:load', () => {
-
-  });
+    // });
 
 
+    import { initSearch } from '../components/init_search';
+
+    document.addEventListener('turbolinks:load', () => {
+      initSearch();
+    })
