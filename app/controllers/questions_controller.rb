@@ -21,9 +21,10 @@ class QuestionsController < ApplicationController
     #   "cadre explication vert"
     # end
 
-    @display_answer = !params.dig(:answer, :response_id).blank?
+    @response_id = params.dig(:answer, :response_id)
+    @display_answer = @response_id.present?
+    @correct_answer = Response.find(@response_id).result if @response_id.present?
     @next_question = Question.find_by(quiz: @question.quiz, order: @question.order + 1)
-
     #est ce que la réponse est vraie ? (pour utiliser avec les couleurs)
   end
 end

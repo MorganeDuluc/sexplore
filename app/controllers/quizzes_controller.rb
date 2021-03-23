@@ -9,4 +9,7 @@ class QuizzesController < ApplicationController
     @questions = @quiz.questions
   end
 
+  def quiz_end
+    @quiz = Quiz.find(params[:id])
+  end
 end

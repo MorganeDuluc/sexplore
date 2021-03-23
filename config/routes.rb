@@ -8,7 +8,9 @@ Rails.application.routes.draw do
         resources :user_quizzes, only: [:new, :create]
       end
     end
-    resources :quizzes, only: :show
+    resources :quizzes, only: :show do
+      get '/quiz_end', on: :member, to: 'quizzes#quiz_end'
+    end
     resources :questions, only: :show do
       resources :responses, only: :create
     end

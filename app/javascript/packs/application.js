@@ -8,7 +8,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-import "controllers"
+import "controllers";
 import "bootstrap";
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -18,27 +18,23 @@ import "bootstrap";
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import Carousel from "stimulus-carousel"
-import Swiper from 'swiper'
-import 'swiper/swiper-bundle.min.css'
+
+import Carousel from "stimulus-carousel";
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.min.css';
 
 // const swiper = new Swiper('.swiper-container', {
-//   direction: 'horizontal',
-//   loop: false,
-//   navigation: {
-//   nextEl: '.swiper-button-next',
-//   prevEl: '.swiper-button-prev',
-// },
+  //   direction: 'horizontal',
+  //   loop: false,
+  //   navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
 
-// });
+    // });
+
+import { initSearch } from '../components/init_search';
 
 document.addEventListener('turbolinks:load', () => {
-
-  });
-
-
-// import { Application } from "stimulus"
-// import ScrollTo from "stimulus-scroll-to"
-
-// const application = Application.start()
-// application.register("scroll-to", ScrollTo)
+  initSearch();
+})

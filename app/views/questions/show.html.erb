@@ -13,8 +13,11 @@
 <!-- user clik sur une réponse -->
 <!-- bouton link to response.edit -->
 
-<%= @display_answer %>
 <% if @display_answer %>
   <%= @question.explication %>
-  <%= link_to 'Next_question', question_path(@next_question)  %>
+    <% if @question.order < 5 %>
+      <%= link_to 'Question suivante', question_path(@next_question) %>
+    <% elsif @question.order == 5 %>
+      <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz) %>
+  <% end %>
 <% end %>
