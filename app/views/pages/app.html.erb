@@ -1,13 +1,14 @@
 <div class="background-color">
 
-  <div class="card-search position">
+  <div class="card-search">
     <%#= link_to request.referer.present? ? request.referer : default_path do %>
-      <i class="fas fa-arrow-left"></i>
+      <%# <i class="fas fa-arrow-left"></i> %>
     <%# end %>
+    <h1>Sexplore<h1>
     <div class="search-js">
       <%= form_tag app_path, class:"form-input", method: :get, remote: true do %>
         <div class="search-form-control form-group">
-          <%= text_field_tag :query, params[:query],  class: "form-control", placeholder: "Je tape ma recherche" %>
+          <%= text_field_tag :query, params[:query],  class: "form-control", placeholder: "Je tape ma recherche", autocomplete:'off' %>
           <button name="button" type="submit" class="btn">
             <i class="fas fa-search"></i>
           </button>
@@ -43,4 +44,4 @@
     </div>
 </div>
 
-<%= render 'shared/navbar' %>
+<%#= render 'shared/navbar' %>

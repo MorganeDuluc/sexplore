@@ -1,11 +1,12 @@
-<body class="background-color">
-  <div class="container">
+<div class="background-color">
   <div>
     <%= image_tag 'corps.png', class: 'img-nude' %>
   </div>
+
   <div>
     <h1 style="text-align: center;" class="title">Sexplore</h1>
   </div>
+
   <div class="btn-position">
     <% if user_signed_in? %>
       <%= link_to "Je commence", app_path, class: 'btn-principal links' %>
@@ -13,6 +14,5 @@
       <%= link_to "Je commence", explainer_one_path, class: 'btn-principal links'%>
     <% end %>
   </div>
-  </div>
-</body>
 
+</div>

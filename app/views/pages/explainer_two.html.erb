@@ -1,21 +1,27 @@
-<body>
-  <div>
-    <div class="card-chat">
-
-    </div>
-      <div>
-        <%= image_tag 'informafion.png', class: 'img-fion' %>
-      </div>
-    <div class="card-chat-blue">
-      <% if user_signed_in? %>
-      <%= link_to app_path do %>
-       <i class="fas fa-arrow-right"></i>
-       <% end %>
-     <% else %>
-      <%= link_to new_user_registration_path do %>
-        <i class="fas fa-arrow-right"></i>
-     <% end %>
-     <% end %>
-    </div>
+<div class="background-color">
+  <div class="card-chat">
+    <p>Pour développer tes connaissances tu pourras regarder des vidéos, poser tes questions dans l'agora et faire des quizzes en sélectionnant et/ou recherchant le thème que tu souhaites 😎</p>
   </div>
-</body>
+
+  <div>
+    <%= image_tag 'informafion-1.png', class: 'img-fion' %>
+  </div>
+
+  <div class="card-chat-blue">
+    <% if user_signed_in? %>
+      <%= link_to app_path do %>
+        <p>J'ai hâte de pouvoir échanger avec d'autres personnes ! Je veux passer à l'action et <strong>explorer ma sexualité</strong> à tes côtés Informafion 🧐 </p>
+        <div class='arrow'>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      <% end %>
+    <% else %>
+      <%= link_to new_user_registration_path do %>
+         <p>J'ai hâte de pouvoir échanger avec d'autres personnes ! Je veux passer à l'action et <strong>explorer ma sexualité</strong> à tes côtés Informafion 🧐 </p>
+        <div class='arrow'>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

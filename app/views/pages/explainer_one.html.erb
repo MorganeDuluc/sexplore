@@ -1,15 +1,22 @@
-<body>
-  <div>
-    <div class="card-chat">
-
-    </div>
-      <div>
-        <%= image_tag 'informafion.png', class: 'img-fion' %>
-      </div>
-    <div class="card-chat-blue">
-      <%= link_to explainer_two_path do %>
-        <i class="fas fa-arrow-right"></i>
-        <% end %>
-    </div>
+<div class="background-color">
+  <div class="card-chat">
+    <p>Bienvenue sur <strong>Sexplore</strong> ! Si tu es ici c'est parce que tu as des interrogations sur ta sexualité et ça j'adore ! 🥰
+    <br>
+    Je suis <strong>Informarfion</strong> et je te suivrai tout au long de ton parcours sur l'application.</p>
   </div>
-</body>
+
+  <div>
+    <%= image_tag 'informafion-1.png', class: 'img-fion' %>
+  </div>
+
+  <div class="card-chat-blue">
+    <%= link_to explainer_two_path do %>
+      <p>Salut <strong>Informarfion !</strong> Je suis excité(e) de partir à la découverte des mystères de mon corps 😏
+      <br>
+      Je suis prêt(e) à passer à l'<strong>étape suivante</strong>.</p>
+      <div class='arrow'>
+          <i class="fas fa-arrow-right"></i>
+      </div>
+    <% end %>
+  </div>
+</div>
