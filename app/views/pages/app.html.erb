@@ -1,10 +1,11 @@
 <div class="background-color">
 
   <div class="card-search position">
-      <%#= link_to request.referer.present? ? request.referer : default_path do %>
-        <i class="fas fa-arrow-left"></i>
-      <%# end %>
-      <%= form_tag app_path, class:"form-input", method: :get do %>
+    <%#= link_to request.referer.present? ? request.referer : default_path do %>
+      <i class="fas fa-arrow-left"></i>
+    <%# end %>
+    <div class="search-js">
+      <%= form_tag app_path, class:"form-input", method: :get, remote: true do %>
         <div class="search-form-control form-group">
           <%= text_field_tag :query, params[:query],  class: "form-control", placeholder: "Je tape ma recherche" %>
           <button name="button" type="submit" class="btn">
@@ -12,6 +13,7 @@
           </button>
         </div>
       <% end %>
+    </div>
   </div>
 
   <div class="slide-part">
