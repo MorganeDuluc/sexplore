@@ -1,6 +1,8 @@
 <div class="background-color">
   <div class="card-search">
-    <i class="fas fa-arrow-left"></i>
+    <%= link_to request.referer.present? ? request.referer : root_path do %>
+      <i class="fas fa-arrow-left"></i>
+      <% end %>
   </div>
 </div>
 
@@ -8,6 +10,6 @@
   <h3>Félicitations !</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit porttitor nunc interdum suspendisse.</p>
 </div>
-<div>
+<div style="text-align: center; margin-top: 80px;">
   <%= link_to "Retour aux quizzes", theme_quizzes_path(@quiz.theme), class: 'btn-principal links'%>
 </div>
