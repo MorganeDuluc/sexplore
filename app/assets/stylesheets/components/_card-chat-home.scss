@@ -18,19 +18,52 @@
   box-shadow: 0px 4px 24px #D4D4D4;
   margin-left: 107px;
   margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
 }
 
+.card-chat p {
+  margin-bottom: 0;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
 
 .card-chat-blue {
   width: 244px;
-  height: 160px;
+  height: 170px;
   background: #B6E2FC;
   border-radius: 24px 24px 0px 24px;
   position: relative;
   box-shadow: 0px 4px 24px #D4D4D4;
-  color: white;
   margin-left: 20px;
-  margin-top: 50px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.card-chat-blue p {
+  margin-bottom: 0;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.arrow {
+  position: absolute;
+  left: 210px;
+  bottom: 8px;
+
+}
+.fa-arrow-right {
+  color: white;
+  font-size: 18px;
 }
 
 #card-chat-pseudo {
