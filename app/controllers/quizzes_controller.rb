@@ -1,7 +1,7 @@
 class QuizzesController < ApplicationController
   def index
     @theme = Theme.find(params[:theme_id])
-    @quizzes = @theme.quizzes
+    @quizzes = @theme.quizzes.order('finished')
   end
 
   def show

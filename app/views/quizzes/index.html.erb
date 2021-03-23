@@ -12,31 +12,41 @@
   <div class="quiz-side">
     <h3>Bienvenue dans le thème: <strong><%= @theme.name %></strong></h3>
     <% @quizzes.each do |quiz| %>
-      <div class="card-quiz-unlock">
+    <% if quiz.finished == true %>
+        <div class="card-quiz-unlock">
+          <% if quiz.questions.present? %>
+            <% link = question_path(quiz.questions.first) %>
+          <% else %>
+            <% link = root_path %>
+          <% end %>
+
+          <%= link_to link do %>
+
+            <i class="fas fa-check"></i>
+            <div class="card-quiz-unlock-infos">
+              <h4> <%= quiz.title %> </h4>
+              <p> 5 questions - 10 minutes </p>
+            </div>
+          <% end %>
+        </div>
+    <% else %>
+      <div class="card-quiz-lock">
         <% if quiz.questions.present? %>
           <% link = question_path(quiz.questions.first) %>
         <% else %>
           <% link = root_path %>
         <% end %>
 
-        <%= link_to link do %>
-        <%#= link_to "https://jrkrupa.typeform.com/to/vI4komao" do %>
-      <%#= if  quiz.finished == true do %>
-          <i class="fas fa-check"></i>
-          <div class="card-quiz-unlock-infos">
+
+
+          <i class="fas fa-lock"></i>
+          <div class="card-quiz-lock-infos">
             <h4> <%= quiz.title %> </h4>
             <p> 5 questions - 10 minutes </p>
           </div>
-        <% end %>
+
       </div>
     <% end %>
+    <% end %>
   </div>
-      <%#= else %>
-        <%# <div class="card-quiz-lock">
-          <i class="fas fa-lock"></i>
-          <div class="card-quiz-lock-infos"> %>
-            <%# <h4> <%= quiz.title %>
-            <%# <p> 5 questions - 10 minutes </p>
-          </div>
-        </div> %>
 </div>
