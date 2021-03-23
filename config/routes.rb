@@ -23,5 +23,6 @@ Rails.application.routes.draw do
 # end
   get '/explainer_one', to: 'pages#explainer_one'
   get '/explainer_two', to: 'pages#explainer_two'
+  get '/quiz_end', to: 'questions#quiz_end'
   get '/app', to: 'pages#app'
 end
