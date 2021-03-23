@@ -25,7 +25,4 @@ class QuestionsController < ApplicationController
     @next_question = Question.find_by(quiz: @question.quiz, order: @question.order + 1)
     #est ce que la réponse est vraie ? (pour utiliser avec les couleurs)
   end
-
-  def quiz_end
-  end
 end
