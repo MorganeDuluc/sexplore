@@ -1,37 +1,33 @@
 <div class="card-fixed">
-  <div class="nav-link">
+  <div class="icon-nav">
     <%# <div class="d-flex"> %>
       <%= link_to themes_path, class: "icon-nav" do %>
-        <i class="far fa-lightbulb"></i>
-        <%# <i class="fas fa-lightbulb">Active</i> %>
+        <i class="fas fa-lightbulb"></i>
       <% end %>
     <%# </div> %>
 
     <%# <div class="d-flex"> %>
       <%= link_to channels_path, class: "icon-nav" do %>
-        <i class="far fa-comment"></i>
-        <%# <i class="fas fa-comment">Active</i> %>
+        <i class="fas fa-comment"></i>
       <% end %>
     <%# </div> %>
 
     <%# <div class="d-flex"> %>
       <%= link_to videos_path, class: "icon-nav" do %>
-        <i class="far fa-play-circle"></i>
-        <%# <i class="fas fa-play-circle">Active</i> %>
+        <i class="fas fa-play-circle"></i>
       <% end %>
     <%# </div> %>
 
     <%# <div class="d-flex"> %>
-      <%#= link_to user_quiz_path(user_id), class: "icon-nav" do %>
-        <i class="far fa-user-circle"></i>
-        <%# <i class="fas fa-user-circle">Active</i> %>
-      <%# <% end %>
+      <%= link_to themes_path, class: "icon-nav" do %>
+        <i class="fas fa-user-circle"></i>
+      <% end %>
     <%# </div> %>
   </div>
 
     <div class="butt-logo">
-      <%= link_to root_path do %>
-        <%= image_tag "informafion-ring.png", class: "img-fion-quiz middle" %>
+      <%= link_to app_path do %>
+        <%= image_tag "informafion-ring.png" %>
       <% end %>
     </div>
 

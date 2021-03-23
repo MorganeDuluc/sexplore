@@ -18,18 +18,37 @@ import "bootstrap";
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
+  const input = document.querySelector("mettre class de l'input");
 
-  // const input = document.querySelector("#input-search");
-  // console.log(input)
-  // input.addEventListener("keyup", (e) => {
-  //   e.preventDefault()
-  //   console.log (input.value)
-  //   // e.current_value = input.dataset.formInput
-  //   // console.log(current_value);
-  // } )
-// import Carousel from "stimulus-carousel"
-// import Swiper from 'swiper'
-// import 'swiper/swiper-bundle.min.css'
+  // fetch("est-il possible de mettre le seed")
+  //   .then(response => response.json())
+  //   .then((data) => {
+  //     data.Search.forEach((result) => {
+  //       const movieTag = `<li class="list-inline-item">
+  //         <img src="${result.Poster}" alt="">
+  //         <p>${result.Title}</p>
+  //       </li>`;
+  //       results.insertAdjacentHTML("beforeend", movieTag);
+  //     });
+  //   });
+
+
+// "récupérer la valeur de text_field_tag"
+// "avec cette valeur rechercher les themes, channel et video qui ont l'input"
+// input.addEventListener('keyup', (event) => {
+//   event.preventDefault();
+//   const input = event.currentTarget.querySelector(".mettre la class de l'input");
+//     inputs.forEach((input)) => {
+//       "faire le code de app"
+//     }
+//   input.innerHTML = '';
+//   "recherche theme, agora, video" (input.value);
+// });
+
+
+import Carousel from "stimulus-carousel"
+import Swiper from 'swiper'
+import 'swiper/swiper-bundle.min.css'
 
 // const swiper = new Swiper('.swiper-container', {
 //   direction: 'horizontal',
