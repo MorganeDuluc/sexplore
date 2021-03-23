@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       get '/quiz_end', on: :member, to: 'quizzes#quiz_end'
     end
     resources :questions, only: :show do
+      get '/explication', on: :member, to: 'questions#explication'
       resources :responses, only: :create
     end
     resources :responses, only: :show
