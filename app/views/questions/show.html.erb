@@ -11,8 +11,8 @@
 <% end %>
 <!-- toggle bouton pour clicker -->
 <!-- user clik sur une réponse -->
+<%= link_to 'explication', explication_question_path  %>
 <!-- bouton link to response.edit -->
-
 <% if @display_answer %>
   <%= @question.explication %>
     <% if @question.order < 5 %>
@@ -21,3 +21,4 @@
       <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz) %>
   <% end %>
 <% end %>
+
