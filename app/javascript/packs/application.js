@@ -2,13 +2,13 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
-import { Application } from "stimulus"
 
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+import "controllers"
 import "bootstrap";
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -17,8 +17,6 @@ import "bootstrap";
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-
-
 
   const input = document.querySelector("mettre class de l'input");
 
@@ -52,23 +50,18 @@ import Carousel from "stimulus-carousel"
 import Swiper from 'swiper'
 import 'swiper/swiper-bundle.min.css'
 
-const swiper = new Swiper('.swiper-container', {
-  direction: 'horizontal',
-  loop: false,
-  navigation: {
-  nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev',
-},
+// const swiper = new Swiper('.swiper-container', {
+//   direction: 'horizontal',
+//   loop: false,
+//   navigation: {
+//   nextEl: '.swiper-button-next',
+//   prevEl: '.swiper-button-prev',
+// },
 
-});
-
-const application = Application.start()
-application.register("carousel", Carousel)
+// });
 
 document.addEventListener('turbolinks:load', () => {
 
   });
 
-document.getElementById( "boxer" ).onclick = function() {
 
-};
