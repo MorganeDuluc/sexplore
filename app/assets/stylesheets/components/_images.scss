@@ -1,15 +1,25 @@
+// Silhouette corps
 .img-nude {
   width: 262px;
   height: 353px;
   margin-left: 40px;
 }
 
-
+// Informafion explication
 .img-fion {
-  width: 67px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   position: relative;
   bottom: 30px;
+  margin-left: 20px;
+}
+
+// Informafion chat
+.img-fion-small {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  bottom: 19px;
   margin-left: 20px;
 }
 
@@ -21,14 +31,6 @@
   top: 120px;
 }
 
-#img-fion-small {
-  width: 48px;
-  height: 46px;
-  position: relative;
-  bottom: 19px;
-  margin-left: 24px;
-}
-
 #div-fion {
   height:20px;
 }
@@ -38,9 +40,7 @@
   height: 64px;
   position: relative;
   bottom: 30px;
-
 }
-
 
 #img {
   width: inherit;
@@ -48,101 +48,101 @@
   border-radius: inherit;
 }
 
+// Select your avatar
 #boxer {
   background-image: url("boxer.png");
   background-size: 70%;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
   background-position: center;
   background-color: white;
-  border-radius: 50%;
   border: 1px solid #b6e2fc;
 }
+
 #soutif {
   background-image: url("soutif.png");
   background-size: 71%;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
   background-position: center;
   background-color: white;
-  border-radius: 50%;
   border: 1px solid #b6e2fc;
 }
+
 #clito {
   background-image: url("clito.png");
-  background-size: 66%;
+  background-size: 63%;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
   background-position: center;
   background-color: white;
-  border-radius: 50%;
   border: 1px solid #b6e2fc;
 }
+
 #lèvres {
   background-image: url("lèvres.png");
   background-size: 71%;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
   background-position: center;
   background-color: white;
-  border-radius: 50%;
   border: 1px solid #b6e2fc;
 }
+
 #capote {
   background-image: url("capote.png");
-  background-size: 68%;
+  background-size: 60%;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
   background-position: center;
   background-color: white;
-  border-radius: 50%;
   border: 1px solid #b6e2fc;
 }
+
 #teub {
   background-image: url("teub.png");
-  background-size: 63%;
+  background-size: 60%;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
   background-position: center;
   background-color: white;
-  border-radius: 50%;
   border: 1px solid #b6e2fc;
 }
+
 #seins {
   background-image: url("seins.png");
   background-size: 73%;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
   background-position: center;
   background-color: white;
-  border-radius: 50%;
   border: 1px solid #b6e2fc;
 }

@@ -1,25 +1,29 @@
-<div id="card-chat-pseudo">
-  <p>Choisi ton pseudo</p>
-</div>
-<div>
-  <%= image_tag 'informafion.png', id: "img-fion-small" %>
-</div>
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
-  <div class="form-inputs">
-    </div>
-    <%= f.input :pseudo,
+<div class="background-color marge">
+
+  <div class="card-chat">
+    <p>Entre tes informations !</p>
+  </div>
+  <%= image_tag 'informafion-1.png', class: "img-fion-small" %>
+
+
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <p class="p-login negative-marge">Entre ton pseudo<p>
+      <%= f.error_notification %>
+      <div class="form-inputs"></div>
+      <%= f.input :pseudo,
+                  required: true,
+                  label: false,
+                  autofocus: true,
+                  input_html: { autocomplete: "pseudo" }%>
+
+    <p class="p-login">Entre ton mot de passe<p>
+    <%= f.input :password,
                 required: true,
                 label: false,
-                autofocus: true,
-                input_html: { autocomplete: "pseudo", class: "registration-bar" }%>
-    <div id="card-chat-avatar">
-      <p>Choisi ton avatar</p>
-    </div>
-    <div id="div-fion">
-      <%= image_tag 'informafion.png', id: "img-fion-small" %>
-    </div>
+                input_html: { autocomplete: "new-password" } %>
+
     <div data-controller="carousel" class="swiper-container" id="carousel" data-carousel-options-value='{ "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
+      <p class="p-login">Choisi ton avatar</p>
       <%= f.hidden_field :avatar %>
       <div class="swiper-wrapper">
         <div class="swiper-slide" data-value="boxer">
@@ -45,16 +49,22 @@
         </div>
       </div>
     </div>
-    <%= f.input :password,
-                required: true,
-                label: false,
-                placeholder: 'Entre ton mot de passe',
-                input_html: { autocomplete: "new-password", class: "password-bar" } %>
-    <div class="btn-position">
-      <%= f.button :submit, "Je m'inscris", id: "btn-principal-connection" %>
-    <%= render "devise/shared/links" %>
-    </div>
-<% end %>
 
-<div class="swiper-button-prev" id="swiper-button-prev"></div>
-<div class="swiper-button-next" id="swiper-button-next"></div>
+    <div class="btn-login">
+      <%= f.button :submit, "Je m'inscris", id: "btn-je-minscris" %>
+      <%= render "devise/shared/links" %>
+    </div>
+  <% end %>
+
+  <div class="swiper-button-prev" id="swiper-button-prev"></div>
+  <div class="swiper-button-next" id="swiper-button-next"></div>
+
+</div>
+
+    <%# <div class="card-chat">
+      <p>Choisi ton avatar</p>
+    </div> %>
+
+    <%# <div id="div-fion"> %>
+      <%#= image_tag 'informafion-1.png', class: "img-fion-small" %>
+    <%# </div> %>
