@@ -6864,6 +6864,11 @@ stimulus-carousel@^2.0.0:
   dependencies:
     swiper "^6.3.5"
 
+stimulus-scroll-to@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/stimulus-scroll-to/-/stimulus-scroll-to-2.0.1.tgz#a097267d82e432ce63019ed6f09ea5a464a0fe26"
+  integrity sha512-FaxKbxAEVjjHa4zEq5/U03APBgGgRfUkruJ4KGTkWUPvssoqbu6DcV4e7abytcU70eNCCq8JoUE+Vszuvxy4iw==
+
 stimulus@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/stimulus/-/stimulus-2.0.0.tgz#713c8b91a72ef90914b90955f0e705f004403047"

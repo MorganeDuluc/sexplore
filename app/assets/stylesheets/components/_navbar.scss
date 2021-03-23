@@ -7,16 +7,11 @@
   height: 60px;
   position: fixed;
   bottom: 0;
-  // display: flex;
 }
 
-.icon {
-  // flex-grow: 0;
-}
-
-.icon-nav {
-  justify-content: space-around;
-  align-items: center;
+.icons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .butt-logo img {
@@ -28,6 +23,15 @@
   position: absolute;
   bottom: 35px;
   left: 162px;
+}
+
+.fa-home{
+  color: #F2B69E;
+  font-size: 24px;
+
+  &:active {
+    color: #B6E2FC;
+  }
 }
 
 .fa-lightbulb {

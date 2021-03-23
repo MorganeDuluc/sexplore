@@ -18,10 +18,10 @@ import "bootstrap";
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
+
 import Carousel from "stimulus-carousel";
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.min.css';
-
 
 // const swiper = new Swiper('.swiper-container', {
   //   direction: 'horizontal',
@@ -33,9 +33,8 @@ import 'swiper/swiper-bundle.min.css';
 
     // });
 
+import { initSearch } from '../components/init_search';
 
-    import { initSearch } from '../components/init_search';
-
-    document.addEventListener('turbolinks:load', () => {
-      initSearch();
-    })
+document.addEventListener('turbolinks:load', () => {
+  initSearch();
+})
