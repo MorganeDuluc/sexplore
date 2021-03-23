@@ -11,5 +11,5 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit porttitor nunc interdum suspendisse.</p>
 </div>
 <div style="text-align: center; margin-top: 80px;">
-  <%= link_to "Retour aux quizzes", theme_quizzes_path(@quiz.theme), class: 'btn-principal links'%>
+  <%= link_to "Retour aux quizzes", theme_quizzes_path(@quiz.theme, status: "finished", quiz: @quiz), class: 'btn-principal links'%>
 </div>
