@@ -1,7 +1,4 @@
-<!-- question affichée -->
 <%= @question.content %>
-<!-- réponses proposées -->
-
 <%= simple_form_for @question, url: question_path(@question.id), method: :get do |f| %>
   <%= simple_fields_for :answer do |answer_f| %>
     <%= answer_f.input :response_id, as: :radio_buttons, collection: @question.responses.map {|response| [response.content, response.id]}%>
@@ -9,16 +6,3 @@
     <%= f.submit "Je valide ma réponse" do %>
   <% end %>
 <% end %>
-<!-- toggle bouton pour clicker -->
-<!-- user clik sur une réponse -->
-<%= link_to 'explication', explication_question_path  %>
-<!-- bouton link to response.edit -->
-<% if @display_answer %>
-  <%= @question.explication %>
-    <% if @question.order < 5 %>
-      <%= link_to 'Question suivante', question_path(@next_question) %>
-    <% elsif @question.order == 5 %>
-      <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz) %>
-  <% end %>
-<% end %>
-

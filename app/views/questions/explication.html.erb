@@ -1,3 +1,19 @@
-<h1>toto</h1>
-
-<%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz) %>
+<% if @correct_answer %>
+  <div class="border border-success">
+    <%= @question.explication %>
+      <% if @question.order < 5 %>
+        <%= link_to 'Question suivante', question_path(@next_question) %>
+      <% elsif @question.order == 5 %>
+        <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz) %>
+    <% end %>
+  </div>
+<% else %>
+  <div class="border border-warning">
+    <%= @question.explication %>
+      <% if @question.order < 5 %>
+        <%= link_to 'Question suivante', question_path(@next_question) %>
+      <% elsif @question.order == 5 %>
+        <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz) %>
+      <% end %>
+  </div>
+<% end %>
