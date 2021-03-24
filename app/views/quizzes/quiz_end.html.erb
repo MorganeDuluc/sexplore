@@ -1,14 +1,16 @@
 <div class="background-color">
-  <div class="card-search">
-    <%= link_to request.referer.present? ? request.referer : root_path do %>
-      <i class="fas fa-arrow-left"></i>
-      <% end %>
+  <div class="card-search" id="card-video">
+    <%= image_tag 'fake-video.png', class: 'fake-video'%>
   </div>
 </div>
 
 <div style="margin-top: 320px; text-align: center;">
+  <div class="container">
   <h3>Félicitations !</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit porttitor nunc interdum suspendisse.</p>
+    <p>Tu en sais maintenant un peu plus sur <%= @quiz.title.downcase %></p>
+    <p>Tu as la possibilité de rejouer le quiz si tu veux revoir des notions. J'espère en tous cas que tu y vois plus clair !</p>
+  </div>
+
 </div>
 <div style="margin-top: 80px;">
   <%= link_to "Retour aux quizzes", theme_quizzes_path(@quiz.theme, status: "finished", quiz: @quiz), class: 'btn-blue-end-quiz links'%>
