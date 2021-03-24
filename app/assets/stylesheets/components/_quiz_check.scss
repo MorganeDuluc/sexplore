@@ -1,18 +1,19 @@
 .form-check {
   width: 335px;
-  height: 90px;
+  height: 80px;
   background-color: #F2B69E;
   border: solid 1px #B6E2FC;
   margin-top: 5px;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   color: white;
+  font-family: 'Maven Pro', sans-serif;
 }
 
 
 .responses {
   margin-left: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .explications {
@@ -24,6 +25,7 @@
   padding: 10px;
   color: white;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Maven Pro', sans-serif;
 }
 
 .right {

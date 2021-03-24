@@ -1,20 +1,20 @@
-<h3 style="text-align: center;">Explications</h3>
+<h3 style="text-align: center; font-family: 'Maven Pro', sans-serif;">Explications</h3>
 <% if @correct_answer %>
   <div class="explications right">
     <%= @question.explication %>
       </div>
       <% if @question.order < 5 %>
-        <%= link_to 'Question suivante', question_path(@next_question) %>
+        <%= link_to 'Question suivante', question_path(@next_question), class: 'btn-explications' %>
       <% elsif @question.order == 5 %>
-      <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz)%>
+      <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz), class: 'btn-explications'%>
   <% end %>
 <% else %>
   <div class="explications wrong">
     <%= @question.explication %>
     </div>
       <% if @question.order < 5 %>
-        <%= link_to 'Question suivante', question_path(@next_question)%>
+        <%= link_to 'Question suivante', question_path(@next_question), class: 'btn-explications'%>
       <% elsif @question.order == 5 %>
-      <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz)%>
+      <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz), class: 'btn-explications'%>
     <% end %>
 <% end %>

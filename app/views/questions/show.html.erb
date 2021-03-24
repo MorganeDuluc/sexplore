@@ -1,12 +1,14 @@
-<div style="text-align: center; margin-top: 20px;">
-  <%= @question.content %>
-</div>
-<div class="responses">
-  <%= simple_form_for @question, url: question_path(@question.id), method: :get do |f| %>
-    <%= simple_fields_for :answer do |answer_f| %>
-      <%= answer_f.input :response_id, as: :radio_buttons, required: false, label: "Question #{@question.order}/5", collection: @question.responses.map {|response| [response.content, response.id]}%>
+<div style="font-family: 'Maven Pro', sans-serif;">
+  <div style="text-align: center; margin-top: 20px;">
+      <%= @question.content %>
+    </div>
+  <div class="responses">
+    <%= simple_form_for @question, url: question_path(@question.id), method: :get do |f| %>
+      <%= simple_fields_for :answer do |answer_f| %>
+        <%= answer_f.input :response_id, as: :radio_buttons, required: false, label: "Question #{@question.order}/5", collection: @question.responses.map {|response| [response.content, response.id]}%>
+          <% end %>
+          <%= f.submit "Je valide ma réponse", class: 'btn-blue' do %>
+            </div>
         <% end %>
-        <%= f.submit "Je valide ma réponse", class: 'btn-blue' do %>
-          </div>
       <% end %>
-    <% end %>
+</div>
