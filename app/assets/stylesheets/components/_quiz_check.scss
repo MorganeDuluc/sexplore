@@ -3,16 +3,17 @@
   height: 90px;
   background-color: #F2B69E;
   border: solid 1px #B6E2FC;
-  margin-top: 5px;
+  margin-top: 10px;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   color: white;
+  padding: 10px;
 }
 
 
 .responses {
   margin-left: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .explications {
@@ -34,4 +35,18 @@
 .wrong {
   border: solid 3px;
   border-color: #F3B6FC;
+}
+
+.form-check-input {
+  position: absolute;
+  transform: scale(0);
+
+}
+
+.form-check-input + label {
+  cursor: pointer;
+}
+
+.form-check-input:checked + label {
+  color: #9C6274;
 }
