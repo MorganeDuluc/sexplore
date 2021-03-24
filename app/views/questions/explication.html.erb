@@ -13,7 +13,7 @@
     <%= @question.explication %>
     </div>
       <% if @question.order < 5 %>
-        <%= link_to 'Question suivante', question_path(@next_question)%>
+        <%= link_to 'Question suivante', question_path(@next_question), class: 'btn-blue-explications'%>
       <% elsif @question.order == 5 %>
       <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz)%>
     <% end %>
