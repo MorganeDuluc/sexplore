@@ -1,4 +1,4 @@
 meta_product_name: "Sexplore"
 meta_title: "Sexplore - Découvrez tout sur les mystères de votre sexualité."
 meta_description: "Sexplore la nouvelle application qui parle de sexualité sans tabous à partir de 12 ans !"
-meta_image: "acte-sexuel.png" # should exist in `app/assets/images/`
+meta_image: "cover.png" # should exist in `app/assets/images/`
