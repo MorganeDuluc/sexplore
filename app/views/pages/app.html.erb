@@ -6,9 +6,9 @@
     <%# end %>
     <h1>Sexplore<h1>
     <div class="search-js">
-      <%= form_tag app_path, class:"form-input", method: :get, remote: true do %>
-        <div class="search-form-control form-group">
-          <%= text_field_tag :query, params[:query],  class: "form-control", placeholder: "Je tape ma recherche", autocomplete:'off' %>
+      <%= form_tag app_path, class:"form-input full-search-bar", method: :get, remote: true do %>
+        <div class="search-form-control form-group searchbar-and-button">
+          <%= text_field_tag :query, params[:query],  class: "search-bar-input", placeholder: "Je tape ma recherche", autocomplete:'off' %>
           <button name="button" type="submit" class="btn">
             <i class="fas fa-search"></i>
           </button>

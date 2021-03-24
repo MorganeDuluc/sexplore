@@ -13,22 +13,23 @@
 @import "components/title";
 @import "components/btn_all";
 @import "components/images";
+@import "components/links";
 
 @import "components/card-chat-home";
 @import "components/card-login";
 @import "components/carousel";
 
 @import "components/card-search";
-@import "components/navbar";
-
-@import "components/links";
+// @import "components/navbar";
 
 @import "components/card-themes";
 @import "components/content_agora";
 @import "components/content_video";
 
-@import "components/nav_app";
+@import "components/card-chat-quiz-index";
 @import "components/quiz_index";
+
+@import "components/nav_app";
 @import "components/channel_card";
 @import "components/comment_card";
 @import "components/quiz_check";
