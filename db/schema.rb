@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_22_143235) do
+ActiveRecord::Schema.define(version: 2021_03_24_114200) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2021_03_22_143235) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "avatar"
     t.index ["theme_id"], name: "index_channels_on_theme_id"
     t.index ["user_id"], name: "index_channels_on_user_id"
   end
@@ -71,6 +72,7 @@ ActiveRecord::Schema.define(version: 2021_03_22_143235) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "illustration"
   end
 
   create_table "user_quiz_responses", force: :cascade do |t|

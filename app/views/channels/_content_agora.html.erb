@@ -2,7 +2,7 @@
   <h3>Choisi la question que tu veux découvrir</h3>
     <% channels.each do |channel| %>
       <div class="card-agora">
-        <%= image_tag 'corps.png', class: 'avatar-agora' %>
+        <%= image_tag channel.avatar, class: 'avatar-agora' %>
         <div class="card-agora-infos">
           <h4> <%= channel.title %> </h4>
         </div>

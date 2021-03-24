@@ -3,7 +3,7 @@
   <% themes.each do |theme| %>
     <%= link_to theme_quizzes_path(theme) do %>
       <div class="card-theme">
-        <%= image_tag 'corps.png', class: 'img-taille' %>
+        <%= image_tag theme.illustration, class: 'img-taille' %>
         <div class="card-theme-infos">
           <h4> <%= theme.name %> </h4>
           <p> <%= theme.description %> </p>
