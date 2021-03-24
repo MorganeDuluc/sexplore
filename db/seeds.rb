@@ -14,7 +14,7 @@ User.create!(pseudo: "Test", password: "azerty")
 
 Theme.create!(illustration: "mst.png", name: "Les MST/IST", description: "Tu connais les MST et tu sais comment t'en protéger, mais que connais-tu sur les IST ?")
 Theme.create!(illustration: "acte-sexuel.png", name: "L'acte sexuel", description: "Le sexe ne se limite pas à la pénétration vaginale. Découvre les plaisirs du sexe non-pénétratif.")
-Theme.create!(illustration: "premiere-fois.png", name: "La première fois", description: "La première fois ne se passe pas forcément comme tu l'as prévu et peut être angoissante.")
+premiere_fois = Theme.create!(illustration: "premiere-fois.png", name: "La première fois", description: "La première fois ne se passe pas forcément comme tu l'as prévu et peut être angoissante.")
 Theme.create!(illustration: "plaisir.png", name: "Le Plaisir", description: "Le plaisir est l'essence même des rapports sexuels. L'orgasme n'est pas LE but ultime à atteindre.")
 
 
@@ -28,10 +28,10 @@ Video.create!(title: "Les tabous autour de la première fois", theme_id: Theme.f
 Video.create!(title: "Gérer le stress de la première fois", theme_id: Theme.first.id)
 Video.create!(title: "Une société pénétrocentré", theme_id: Theme.first.id)
 
-Quiz.create!(title: "La communication", theme_id: Theme.first.id, finished: true)
-Quiz.create!(title: "Le consentement", theme_id: Theme.first.id, finished: false)
-Quiz.create!(title: "Le sexe non-pénétratif", theme_id: Theme.first.id, finished: false)
-Quiz.create!(title: "Le sexe pénétratif", theme_id: Theme.first.id, finished: false)
+Quiz.create!(title: "La communication", theme_id: premiere_fois.id, finished: true)
+Quiz.create!(title: "Le consentement", theme_id: premiere_fois.id, finished: false)
+Quiz.create!(title: "Le sexe non-pénétratif", theme_id: premiere_fois.id, finished: false)
+Quiz.create!(title: "Le sexe pénétratif", theme_id: premiere_fois.id, finished: false)
 
 q1 = Question.create!(content: "Ma première fois va être...", order: 1, quiz_id: Quiz.first.id, explication: "Avant toute explication, nommons les préliminaires: le sexe non-pénétratif. Une chose préliminaire est ce qui précède et prépare une autre chose considérée comme plus importante. Hors, le sexe non-pénétratif est aussi important que le sexe pénétratif. D'autant plus que l'importance de la pénétration a été construite sur un mythe, 'l'orgasme vaginale'. Quant au sexe non-pénétratif, il ne consiste pas seulement à faire un cunnilingus ou une fellation. Cela va beaucoup plus loin, pense que tout ton corps est une zone érogène. C'est en carressant, embrassant, griffant, frottant... que tu dois aller découvrir où se trouvent ces zones chez ton/ta partenaire et faire monter le désir qu'il y a entre vous ou même en jouant avec des sex-toys ! Les zones les plus connues sont les parties génitales, les fesses et les seins mais ne te contente pas de ces dernières. Donc NON, le sexe non-pénétratif ne veut pas dire que tu devras faire un cunillingus ou une fellation, c'est bien plus vaste. N'oublie surtout pas que si tu n'en n'as pas envie, tu ne dois PAS le faire. Tu fais ce que tu souhaites de ton corps. TON CORPS = TES REGLES.")
 q2 = Question.create!(content: "Mon/ma partenaire a plus d'expérience que moi, il/elle doit donc prendre le dessus.", order: 2, quiz_id: Quiz.first.id, explication: "Tu ne sais pas conduire une voiture dès la première fois que tu essaies n'est-ce pas ? Pour le sexe c'est pareil, ça s'apprend ! Avec le temps ça deviendra de plus en plus naturel et agréable. La première fois n'est souvent pas ce que nous pensons. Cela peut être surprenant, tu vas te découvrir, être maladroit(e) dans tes gestes et ce ne sera pas toujours agréable. Pour les filles, certaines ont mal, d'autres non, certaines saignent, d'autres non (mais ne t'attends pas à avoir un saignement tel que pendant tes règles). Pour les garçons, oubliez la pénétration qui dure. L'acte pénétratif sera court et rapide. Mais rien de grave, tout va bien ! Ce sera de plus en plus agréable avec le temps. Les points vraiment importants sont la COMMUNICATION avec ton/ta partenaire, le RESPECT mutuel, l'écoute, l'observation. Tu ne commenceras pas de suite par du sexe pénétratif, pense au PLAISIR que tu peux DONNER et RECEVOIR lors du sexe non-pénétratif. Le corps entier est une zone érogène. Prend ton temps, du plaisir et n'hésite pas à dire à ton/ta partenaire ce que tu apprécies. Découvre toi petit à petit, il est important que tu te connaisses et que tu saches ce que tu aimes ou non. Ne dis JAMAIS oui à ce qui ne t'apporte pas de plaisir, COMMUNIQUE, exprime tes ressentis auprès que ton/ta partenaire sexuel, que tu sois en couple ou non.")
@@ -43,7 +43,6 @@ Response.create!(content: "Comme dans ces films romantiques, où ce moment est v
 Response.create!(content: "Trop cool, je vais pouvoir tester des positions comme j'ai pu en voir sur internet.", result: false, question: q1)
 Response.create!(content: "Sympa je vais enfin savoir ce que ça fait de jouir.", result: false, question: q1)
 Response.create!(content: "Surprenant !", result: true, question: q1)
-
 
 Response.create!(content: "Bien évidemment, je ne veux surtout pas qu'il/elle pense que je suis nul(le).", result: false, question: q2)
 Response.create!(content: "Hors de question je vais lui montrer de quoi je suis capable.", result: false, question: q2)
