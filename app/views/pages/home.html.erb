@@ -7,11 +7,11 @@
     <h1 style="text-align: center;" class="title">Sexplore</h1>
   </div>
 
-  <div class="btn-position">
+  <div class="btn-blue-home">
     <% if user_signed_in? %>
-      <%= link_to "Je commence", app_path, class: 'btn-principal links' %>
+      <%= link_to "Je commence", app_path, class: 'links' %>
     <% else %>
-      <%= link_to "Je commence", explainer_one_path, class: 'btn-principal links'%>
+      <%= link_to "Je commence", explainer_one_path, class: 'links'%>
     <% end %>
   </div>
 
