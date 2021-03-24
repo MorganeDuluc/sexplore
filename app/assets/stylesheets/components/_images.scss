@@ -50,7 +50,7 @@
 
 // Select your avatar
 #boxer {
-  background-image: url("boxer.png");
+  background-image: asset-url("boxer.png");
   background-size: 70%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -64,7 +64,7 @@
 }
 
 #soutif {
-  background-image: url("soutif.png");
+  background-image: asset-url("soutif.png");
   background-size: 71%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -78,7 +78,7 @@
 }
 
 #clito {
-  background-image: url("clito.png");
+  background-image: asset-url("clito.png");
   background-size: 63%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -91,8 +91,8 @@
   border: 1px solid #b6e2fc;
 }
 
-#lèvres {
-  background-image: url("lèvres.png");
+#levres {
+  background-image: asset-url("levres.png");
   background-size: 71%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -106,7 +106,7 @@
 }
 
 #capote {
-  background-image: url("capote.png");
+  background-image: asset-url("capote.png");
   background-size: 60%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -120,7 +120,7 @@
 }
 
 #teub {
-  background-image: url("teub.png");
+  background-image: asset-url("teub.png");
   background-size: 60%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -134,7 +134,7 @@
 }
 
 #seins {
-  background-image: url("seins.png");
+  background-image: asset-url("seins.png");
   background-size: 73%;
   background-repeat: no-repeat;
   display: inline-block;

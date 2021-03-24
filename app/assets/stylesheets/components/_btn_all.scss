@@ -15,6 +15,7 @@
 }
 
 .btn-blue {
+  position:absolute;
   background-color: #b6e2fC;
   box-shadow: 0px 4px 24px #D4D4D4;
   width: 200px;
@@ -26,6 +27,29 @@
   font-size: 16px;
   margin-bottom: 90px;
   font-family: 'Maven Pro', sans-serif;
+  top: 575px;
+  margin-left: 70px;
+  margin-bottom: 90px;
+  font-family: 'Maven Pro', sans-serif;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-blue-end-quiz {
+  background-color: #b6e2fC;
+  box-shadow: 0px 4px 24px #D4D4D4;
+  width: 200px;
+  height: 55px;
+  text-align: center;
+  border-radius: 16px;
+  padding: 14px 22px;
+  color: white;
+  font-size: 16px;
+  margin-left: 90px;
+  margin-bottom: 90px;
+  font-family: 'Maven Pro', sans-serif;
+  text-decoration: none;
+  border: none;
 }
 
 .btn-login {
