@@ -18,11 +18,11 @@ premiere_fois = Theme.create!(illustration: "premiere-fois.png", name: "La premi
 Theme.create!(illustration: "plaisir.png", name: "Le Plaisir", description: "Le plaisir est l'essence même des rapports sexuels. L'orgasme n'est pas LE but ultime à atteindre.")
 
 
-Channel.create!(avatar: "p-avatar-seins", title: "Faut-il toujours jouir lors d'un rapport ?", user_id: User.first.id, theme_id: Theme.first.id)
-Channel.create!(avatar: "p-avatar-clito", title: "La première fois fait-elle toujours mal ?", user_id: User.first.id, theme_id: Theme.first.id)
-Channel.create!(avatar: "p-avatar-penis", title: "A quel âge faire sa première fois ?", user_id: User.first.id, theme_id: Theme.first.id)
-Channel.create!(avatar: "p-avatar-penis", title: "Est ce que je peux parler de mes peurs à mon copain pour ma première fois ?", user_id: User.first.id, theme_id: Theme.first.id)
-Channel.create!(avatar: "p-avatar-seins", title: "Je ne me sens pas prête pour ma première fois mais mon copain insiste, que faire ?", user_id: User.first.id, theme_id: Theme.first.id)
+Channel.create!(avatar: "p-avatar-seins.png", title: "Faut-il toujours jouir lors d'un rapport ?", user_id: User.first.id, theme_id: Theme.first.id)
+Channel.create!(avatar: "p-avatar-clito.png", title: "La première fois fait-elle toujours mal ?", user_id: User.first.id, theme_id: Theme.first.id)
+Channel.create!(avatar: "p-avatar-penis.png", title: "A quel âge faire sa première fois ?", user_id: User.first.id, theme_id: Theme.first.id)
+Channel.create!(avatar: "p-avatar-penis.png", title: "Est ce que je peux parler de mes peurs à mon copain pour ma première fois ?", user_id: User.first.id, theme_id: Theme.first.id)
+Channel.create!(avatar: "p-avatar-seins.png", title: "Je ne me sens pas prête pour ma première fois mais mon copain insiste, que faire ?", user_id: User.first.id, theme_id: Theme.first.id)
 
 Video.create!(title: "Les tabous autour de la première fois", theme_id: Theme.first.id)
 Video.create!(title: "Gérer le stress de la première fois", theme_id: Theme.first.id)
