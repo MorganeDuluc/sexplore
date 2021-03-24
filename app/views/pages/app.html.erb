@@ -4,7 +4,9 @@
     <%#= link_to request.referer.present? ? request.referer : default_path do %>
       <%# <i class="fas fa-arrow-left"></i> %>
     <%# end %>
-    <h1>Sexplore<h1>
+    <%= link_to app_path do %>
+      <h1>Sexplore<h1>
+    <% end %>
     <div class="search-js">
       <%= form_tag app_path, class:"form-input full-search-bar", method: :get, remote: true do %>
         <div class="search-form-control form-group searchbar-and-button">
