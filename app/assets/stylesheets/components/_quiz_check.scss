@@ -1,0 +1,37 @@
+.form-check {
+  width: 335px;
+  height: 90px;
+  background-color: #F2B69E;
+  border: solid 1px #B6E2FC;
+  margin-top: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+
+.responses {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.explications {
+  margin-top: 20px;
+  background-color: #F2B69E;
+  width: 335px;
+  margin-left: 20px;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.right {
+  border: solid 3px;
+  border-color: #BFFCB6;
+}
+
+.wrong {
+  border: solid 3px;
+  border-color: #F3B6FC;
+}
