@@ -3,16 +3,16 @@
   background-color: white;
   border: 1px solid #AD6C80;
   border-radius: 16px 16px 0px 0px;
-  width: 375px;
-  height: 60px;
+  width: 100%;
+  height: 40px;
   position: fixed;
   bottom: 0;
 }
 
-.icons {
-  display: flex;
-  justify-content: space-between;
-}
+// .icons {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
 .butt-logo img {
   width: 50px;
@@ -21,47 +21,47 @@
 
 .butt-logo {
   position: absolute;
-  bottom: 35px;
+  bottom: 5px;
   left: 162px;
 }
 
-.fa-home{
-  color: #F2B69E;
-  font-size: 24px;
+// .fa-home{
+//   color: #F2B69E;
+//   font-size: 24px;
 
-  &:active {
-    color: #B6E2FC;
-  }
-}
+//   &:active {
+//     color: #B6E2FC;
+//   }
+// }
 
-.fa-lightbulb {
-  color: #F2B69E;
-  font-size: 24px;
-   &:active{
-     color: #B6E2FC;
-   }
-}
+// .fa-lightbulb {
+//   color: #F2B69E;
+//   font-size: 24px;
+//    &:active{
+//      color: #B6E2FC;
+//    }
+// }
 
-.fa-comment {
-  color: #F2B69E;
-  font-size: 24px;
-    &:active{
-      color: #B6E2FC;
-    }
-}
+// .fa-comment {
+//   color: #F2B69E;
+//   font-size: 24px;
+//     &:active{
+//       color: #B6E2FC;
+//     }
+// }
 
-.fa-play-circle {
-  color: #F2B69E;
-  font-size: 24px;
-    &:active{
-      color: #B6E2FC;
-    }
-}
+// .fa-play-circle {
+//   color: #F2B69E;
+//   font-size: 24px;
+//     &:active{
+//       color: #B6E2FC;
+//     }
+// }
 
-.fa-user-circle {
-  color: #F2B69E;
-  font-size: 24px;
-    &:active{
-      color: #B6E2FC;
-    }
-}
+// .fa-user-circle {
+//   color: #F2B69E;
+//   font-size: 24px;
+//     &:active{
+//       color: #B6E2FC;
+//     }
+// }

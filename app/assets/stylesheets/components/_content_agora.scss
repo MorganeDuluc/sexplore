@@ -15,11 +15,18 @@
   border: 1px solid #B6E2FC;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   display: flex;
+  justify-content: left;
+  vertical-align: middle;
 }
 
-// .avatar-agora {
+.avatar-agora {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 15px;
 
-// }
+}
 
 .card-agora .card-agora-infos {
   padding: 16px;

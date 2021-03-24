@@ -12,17 +12,17 @@ Theme.destroy_all
 
 User.create!(pseudo: "Test", password: "azerty")
 
-Theme.create!(name: "Le Plaisir", description: "Le plaisir est l'essence même des rapports sexuels. L'orgasme n'est pas LE but ultime à atteindre.")
-Theme.create!(name: "Les MST/IST", description: "Tu connais les MST et tu sais comment t'en protéger, désormais, apprends-en plus sur les IST.")
-Theme.create!(name: "L'acte sexuel", description: "Le sexe ne se limite pas à la pénétration vaginale. Découvre les plaisirs du sexe non-pénétratif.")
-Theme.create!(name: "La première fois", description: "La première fois ne se passe pas forcément comme tu l'as prévu et peut être angoissante. Trouves les réponses à tes questions les plus intimes.")
+Theme.create!(illustration: "mst.png", name: "Les MST/IST", description: "Tu connais les MST et tu sais comment t'en protéger, mais que connais-tu sur les IST ?")
+Theme.create!(illustration: "acte-sexuel.png", name: "L'acte sexuel", description: "Le sexe ne se limite pas à la pénétration vaginale. Découvre les plaisirs du sexe non-pénétratif.")
+Theme.create!(illustration: "premiere-fois.png", name: "La première fois", description: "La première fois ne se passe pas forcément comme tu l'as prévu et peut être angoissante.")
+Theme.create!(illustration: "plaisir.png", name: "Le Plaisir", description: "Le plaisir est l'essence même des rapports sexuels. L'orgasme n'est pas LE but ultime à atteindre.")
 
 
-Channel.create!(title: "Faut-il toujours jouir lors d'un rapport ?", user_id: User.first.id, theme_id: Theme.first.id)
-Channel.create!(title: "La première fois fait-elle toujours mal ?", user_id: User.first.id, theme_id: Theme.first.id)
-Channel.create!(title: "A quel âge faire sa première fois ?", user_id: User.first.id, theme_id: Theme.first.id)
-Channel.create!(title: "Est ce que je peux parler de mes peurs à mon copain pour ma première fois ?", user_id: User.first.id, theme_id: Theme.first.id)
-Channel.create!(title: "Je ne me sens pas prête pour ma première fois mais mon copain insiste, que faire ?", user_id: User.first.id, theme_id: Theme.first.id)
+Channel.create!(avatar: "p-avatar-seins", title: "Faut-il toujours jouir lors d'un rapport ?", user_id: User.first.id, theme_id: Theme.first.id)
+Channel.create!(avatar: "p-avatar-clito", title: "La première fois fait-elle toujours mal ?", user_id: User.first.id, theme_id: Theme.first.id)
+Channel.create!(avatar: "p-avatar-penis", title: "A quel âge faire sa première fois ?", user_id: User.first.id, theme_id: Theme.first.id)
+Channel.create!(avatar: "p-avatar-penis", title: "Est ce que je peux parler de mes peurs à mon copain pour ma première fois ?", user_id: User.first.id, theme_id: Theme.first.id)
+Channel.create!(avatar: "p-avatar-seins", title: "Je ne me sens pas prête pour ma première fois mais mon copain insiste, que faire ?", user_id: User.first.id, theme_id: Theme.first.id)
 
 Video.create!(title: "Les tabous autour de la première fois", theme_id: Theme.first.id)
 Video.create!(title: "Gérer le stress de la première fois", theme_id: Theme.first.id)
