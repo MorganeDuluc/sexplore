@@ -1,19 +1,22 @@
 .explications {
   margin-top: 18px;
-  background-color: #F2B69E;
+  background-color: $peach;
   width: 335px;
   border-radius: 8px;
   padding: 10px;
   margin-left: 20px;
   margin-bottom: 10px;
   color: white;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .right {
-  border: 2px solid #28DF99;
+  border: 2px solid $green-right;
 }
 
 .wrong {
-  border: 2px solid #FA26A0;
+  border: 2px solid $pink;
 }

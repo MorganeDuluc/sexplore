@@ -5,7 +5,7 @@
 .part-video h3 {
   color: #A4A4A4;
   font-family: 'Maven Pro', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   margin-top: 30px;
 }
@@ -13,7 +13,7 @@
 .card-video {
   width: 335px;
   height: 220px;
-  border: 1px solid #B6E2FC;
+  border: 1px solid $blue-btn;
   border-radius: 16px;
   margin-top: 30px;
 }
@@ -21,7 +21,7 @@
 .card-video-infos {
   width: 335px;
   height: 50px;
-  border: 1px solid #B6E2FC;
+  border: 1px solid $blue-btn;
   border-radius: 0 0 16px 16px;
   margin-top: 130px;
   background-color: white;
@@ -33,7 +33,7 @@
 
 .card-video-infos h4 {
   font-family: 'Maven Pro', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   padding-top: 5px;
   padding-left: 10px;

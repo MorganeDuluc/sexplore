@@ -18,7 +18,7 @@
   margin-top: 30px;
   background-color: white;
   border-radius: 8px;
-  border: 1px solid #8CCDF3;
+  border: 1px solid $blue-btn;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -90,7 +90,7 @@
 
 
 .fa-check {
-  color: #BFFCB6;
+  color: $green-right;
   font-size: 25px;
   margin-left: 20px;
   margin-right: 20px;
