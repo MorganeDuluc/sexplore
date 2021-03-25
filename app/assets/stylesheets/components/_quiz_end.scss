@@ -1,12 +1,19 @@
 .card-search-video {
-  background-image: asset-url("video-img.png");
-  background-size: cover;
+  background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url("video-img.png");
+  background-size: auto;
   position: absolute;
   width: 100%;
   height: 230px;
   left: 0px;
   top: 0px;
   border-radius: 0px 0px 50px 50px;
+}
+
+.fa-play-circle {
+  color: white;
+  font-size: 50px;
+  margin-left: 160px;
+  margin-top: 80px;
 }
 
 .congrats {
