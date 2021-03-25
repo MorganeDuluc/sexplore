@@ -54,7 +54,7 @@ Response.create!(content: "Je commence à m'agacer de devoir attendre, je vais a
 Response.create!(content: "Faire l'amour n'est pas urgent, je lui propose d'en parler.", result: true, question: q3)
 Response.create!(content: "Je demande à son entourage ce qui ne va pas avec elle/lui.", result: false, question: q3)
 
-Response.create!(content: "Bien sûr ! tout le monde sait ça.", result: false, question: q4)
+Response.create!(content: "Bien sûr ! Tout le monde sait ça.", result: false, question: q4)
 Response.create!(content: "Si je ne veux pas, il faut quand même que je le fasse pour faire plaisir à mon/ma partenaire.", result: false, question: q4)
 Response.create!(content: "Non c'est que dans le porno.", result: false, question: q4)
 Response.create!(content: "Les préliminaires ne s'arrêtent pas à ces pratiques.", result: true, question: q4)
