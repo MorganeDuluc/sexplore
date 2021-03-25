@@ -1,20 +1,20 @@
 <h3 style="text-align: center; margin-top: 20px;">Explications</h3>
-<% if @correct_answer %>
-  <div class="explications right">
-    <%= @question.explication %>
-      </div>
-      <% if @question.order < 5 %>
-        <%= link_to 'Question suivante', question_path(@next_question), class: 'btn-blue-explications'%>
-      <% elsif @question.order == 5 %>
-      <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz), class: 'btn-blue-explications'%>
-  <% end %>
-<% else %>
-  <div class="explications wrong">
-    <%= @question.explication %>
-    </div>
-      <% if @question.order < 5 %>
-        <%= link_to 'Question suivante', question_path(@next_question), class: 'btn-blue-explications'%>
-      <% elsif @question.order == 5 %>
-      <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz), class: 'btn-blue-explications'%>
+  <% if @correct_answer %>
+    <div class="explications right">
+      <%= @question.explication %>
+        </div>
+        <% if @question.order < 5 %>
+          <%= link_to 'Question suivante', question_path(@next_question), class: 'btn-blue-explications'%>
+        <% elsif @question.order == 5 %>
+        <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz), class: 'btn-blue-explications'%>
     <% end %>
-<% end %>
+  <% else %>
+    <div class="explications wrong">
+      <%= @question.explication %>
+      </div>
+        <% if @question.order < 5 %>
+          <%= link_to 'Question suivante', question_path(@next_question), class: 'btn-blue-explications'%>
+        <% elsif @question.order == 5 %>
+        <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz), class: 'btn-blue-explications'%>
+      <% end %>
+  <% end %>

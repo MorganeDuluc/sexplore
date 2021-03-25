@@ -1,6 +1,6 @@
 //bs home1 + login
 .btn-blue-home {
-  background-color: #a2d5f2;
+  background-color: #8CCDF3;
   box-shadow: 0px 4px 24px #D4D4D4;
   width: 200px;
   height: 55px;
@@ -14,38 +14,6 @@
   text-align: center;
 }
 
-//page sign-up btn sign-up
-#btn-je-minscris {
-  background-color: #a2d5f2;
-  box-shadow: 0px 4px 24px #D4D4D4;
-  width: 158px;
-  height: 53px;
-  border-radius: 16px;
-  padding: 14px 22px;
-  margin-top: 38px;
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-}
-
-//page sign-up btn sign-in
-#btn-deja-inscrit {
-  background-color: white;
-  box-shadow: 0px 4px 24px #D4D4D4;
-  border: 1px solid #A2D5FE;
-  border-radius: 16px;
-  width: 158px;
-  height: 53px;
-  padding: 14px 22px;
-  margin-top: 38px;
-  margin-left: 20px;
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 16px;
-  color: #b6e2fc;
-  text-align: center;
-}
-
 //btns questions
 .btn-blue-question {
   background-color: #8ccdf3;
@@ -53,7 +21,7 @@
   width: 200px;
   height: 55px;
   border-radius: 16px;
-  padding: 14px 22px;
+  padding: 14px 21px;
   color: white;
   font-size: 16px;
   font-family: 'Maven Pro', sans-serif;
@@ -64,11 +32,10 @@
 }
 
 .btn-blue-explications {
-  // position:absolute;
-  background-color: #a2d5f2;
   position:absolute;
-  top: 580px;
-  background-color: #A2D5FE;
+  background-color: #8CCDF3;
+  position:absolute;
+  top: 575px;
   box-shadow: 0px 4px 24px #D4D4D4;
   width: 200px;
   height: 55px;
@@ -78,14 +45,14 @@
   color: white;
   font-size: 16px;
   font-family: 'Maven Pro', sans-serif;
-  margin-left: 85px;
+  margin-left: 90px;
   text-decoration: none;
   border: none;
 }
 
 //btn quiz
 .btn-blue-end-quiz {
-  background-color: #a2d5f2;
+  background-color: #8CCDF3;
   box-shadow: 0px 4px 24px #D4D4D4;
   width: 200px;
   height: 55px;
@@ -94,7 +61,7 @@
   padding: 14px 22px;
   color: white;
   font-size: 16px;
-  margin-left: 90px;
+  margin-left: 85px;
   margin-bottom: 90px;
   font-family: 'Maven Pro', sans-serif;
   text-decoration: none;
@@ -111,7 +78,37 @@
   margin-right: 20px;
 }
 
+//page sign-up btn sign-up
+#btn-je-minscris {
+  background-color: #8CCDF3;
+  box-shadow: 0px 4px 24px #D4D4D4;
+  width: 158px;
+  height: 53px;
+  border-radius: 16px;
+  padding: 14px 22px;
+  margin-top: 38px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
 
+//page sign-up btn sign-in
+#btn-deja-inscrit {
+  background-color: white;
+  box-shadow: 0px 4px 24px #D4D4D4;
+  border: 1px solid #8CCDF3;
+  border-radius: 16px;
+  width: 158px;
+  height: 53px;
+  padding: 14px 22px;
+  margin-top: 38px;
+  margin-left: 20px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  color: #8CCDF3;
+  text-align: center;
+}
 
 a.active {
   text-decoration: none;

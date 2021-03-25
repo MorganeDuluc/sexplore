@@ -16,5 +16,7 @@ class QuizzesController < ApplicationController
 
   def quiz_end
     @quiz = Quiz.find(params[:id])
+    @current_user = current_user
+
   end
 end
