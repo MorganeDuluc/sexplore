@@ -1,6 +1,7 @@
 <div class='card-agoras'>
   <h3>Choisi la question que tu veux découvrir</h3>
-    <% channels.each do |channel| %>
+  <% channels.each do |channel| %>
+    <%= link_to channel_path(channel) do %>
       <div class="card-agora">
         <%= image_tag channel.avatar, class: 'avatar-agora' %>
         <div class="card-agora-infos">
@@ -8,4 +9,5 @@
         </div>
       </div>
     <% end %>
+  <% end %>
 </div>

@@ -34,4 +34,11 @@
   font-size: 14px;
   font-weight: 500;
   margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+.card-agora .card-agora-infos h4 a:active {
+  text-decoration: none;
+  color: black;
 }
