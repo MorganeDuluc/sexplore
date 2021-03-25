@@ -22,7 +22,7 @@ import "bootstrap";
 import Carousel from "stimulus-carousel";
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.min.css';
-
+import { btnToggle } from "../components/btn_toggle.js"
 // const swiper = new Swiper('.swiper-container', {
   //   direction: 'horizontal',
   //   loop: false,
@@ -37,4 +37,5 @@ import { initSearch } from '../components/init_search';
 
 document.addEventListener('turbolinks:load', () => {
   initSearch();
+  btnToggle();
 })
