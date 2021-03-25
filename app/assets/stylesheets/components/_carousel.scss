@@ -1,16 +1,21 @@
-.swiper-wrapper {
+.all-swipe {
   margin-top: 15px;
   text-align: center;
   height: 20px;
 }
 
-#swiper-button-prev{
+#swiper-button-prev {
   top: 450px;
   color: #b6e2fc;
   margin-left: 20px;
 }
+
 #swiper-button-next {
   top: 450px;
   color: #92d7ff;
   margin-right: 20px;
+}
+
+:root {
+  --swiper-navigation-size: 25px !important;
 }

@@ -14,18 +14,18 @@
                   required: true,
                   label: false,
                   autofocus: true,
-                  input_html: { autocomplete: "pseudo" }%>
+                  input_html: { autocomplete: "pseudo", class: 'input-login'}%>
 
     <p class="p-login">Entre ton mot de passe<p>
     <%= f.input :password,
                 required: true,
                 label: false,
-                input_html: { autocomplete: "new-password" } %>
+                input_html: { autocomplete: "new-password", class: 'input-login' } %>
 
     <div data-controller="carousel" class="swiper-container" id="carousel" data-carousel-options-value='{ "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }'>
       <p class="p-login">Choisi ton avatar</p>
       <%= f.hidden_field :avatar %>
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper all-swipe">
         <div class="swiper-slide" data-value="boxer">
           <div id="boxer"></div>
         </div>

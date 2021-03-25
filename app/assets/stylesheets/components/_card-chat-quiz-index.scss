@@ -1,0 +1,23 @@
+.card-chat-quiz {
+  width: 260px;
+  height: 80px;
+  background: white;
+  border-radius: 8px 8px 0px 8px;
+  border: solid 1px;
+  border-color: #AD6C80;
+  box-shadow: 0px 4px 24px #D4D4D4;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-chat-quiz p {
+  margin-bottom: 0;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
