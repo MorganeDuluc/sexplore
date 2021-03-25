@@ -4,7 +4,7 @@
   </div>
 </div>
 
-<div style="margin-top: 320px; text-align: center;">
+<div class="text-btn-part section-center">
   <div class="container">
     <div class="congrats">
       <div class="congrats-title">
@@ -15,14 +15,14 @@
         <%= @current_user.pseudo %>
         <div id="<%= @current_user.avatar%>" style="height: 32px; width: 32px; margin-left: 8px;"></div>
       </div>
-  <div class="congrats-text">
-      <p>Tu en sais maintenant un peu plus sur <%= @quiz.title.downcase %>.</p>
-      <p>Tu as la possibilité de refaire le quiz si tu veux revoir des notions. J'espère en tous cas que tu y vois plus clair ! &#x1F609; </p>
-  </div>
+    <div class="congrats-text">
+        <p>Tu en sais maintenant un peu plus sur <%= @quiz.title.downcase %>.</p>
+        <p>Tu as la possibilité de refaire le quiz si tu veux revoir des notions. J'espère en tous cas que tu y vois plus clair ! &#x1F609; </p>
+    </div>
   </div>
 
-</div>
-<div style="margin-top: 80px;">
-  <%= link_to "Retour aux quizzes", theme_quizzes_path(@quiz.theme, status: "finished", quiz: @quiz), class: 'btn-blue-end-quiz links'%>
+  <div class="section-center">
+    <%= link_to "Retour aux quizzes", theme_quizzes_path(@quiz.theme, status: "finished", quiz: @quiz), class: 'btn-blue-question links'%>
+  </div>
 </div>
 
