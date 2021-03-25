@@ -24,9 +24,9 @@ Channel.create!(avatar: "p-avatar-penis.png", title: "A quel âge faire sa premi
 Channel.create!(avatar: "p-avatar-penis.png", title: "Est ce que je peux parler de mes peurs à mon copain pour ma première fois ?", user_id: User.first.id, theme_id: Theme.first.id)
 Channel.create!(avatar: "p-avatar-seins.png", title: "Je ne me sens pas prête pour ma première fois mais mon copain insiste, que faire ?", user_id: User.first.id, theme_id: Theme.first.id)
 
-Video.create!(title: "Les tabous autour de la première fois", theme_id: Theme.first.id)
-Video.create!(title: "Gérer le stress de la première fois", theme_id: Theme.first.id)
-Video.create!(title: "Une société pénétrocentrée", theme_id: Theme.first.id)
+Video.create!(url: "acte-sexuel.png", title: "Les tabous autour de la première fois", theme_id: Theme.first.id)
+Video.create!(url: "acte-sexuel.png", title: "Gérer le stress de la première fois", theme_id: Theme.first.id)
+Video.create!(url: "acte-sexuel.png", title: "Une société pénétrocentrée", theme_id: Theme.first.id)
 
 Quiz.create!(title: "La communication", theme_id: premiere_fois.id, finished: true)
 Quiz.create!(title: "Le consentement", theme_id: premiere_fois.id, finished: false)
