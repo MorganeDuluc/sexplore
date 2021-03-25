@@ -15,8 +15,23 @@
 }
 
 //btns questions
+.btn-grey-question {
+  background-color: #C0C0C0;
+  box-shadow: 0px 4px 24px #D4D4D4;
+  width: 200px;
+  height: 55px;
+  border-radius: 16px;
+  padding: 14px 21px;
+  color: grey;
+  font-size: 16px;
+  font-family: 'Maven Pro', sans-serif;
+  margin-top: 20px;
+  text-align: center;
+  border: none;
+}
+
 .btn-blue-question {
-  background-color: #8ccdf3;
+  background-color: #8CCDF3;
   box-shadow: 0px 4px 24px #D4D4D4;
   width: 200px;
   height: 55px;
