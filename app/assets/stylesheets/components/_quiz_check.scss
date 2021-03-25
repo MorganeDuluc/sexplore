@@ -1,9 +1,9 @@
 .form-check {
   width: 335px;
-  height: 70px;
+  height: 80px;
   background-color: #F2B69E;
   border: solid 1px #a2d5f2;
-  margin-top: 10px;
+  margin-top: 18px;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   color: white;
@@ -11,26 +11,6 @@
   display: flex;
   text-align: left;
   align-items: center;
-}
-
-// .form-check:focus {
-//     width: 335px;
-//     height: 70px;
-//     background-color: white;
-//     border: solid 1px #a2d5f2;
-//     margin-top: 10px;
-//     border-radius: 8px;
-//     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-//     color: #9C6274;
-//     padding: 10px;
-//     display: flex;
-//     text-align: left;
-//     align-items: center;
-// }
-
-.responses {
-  margin-left: 20px;
-  margin-top: 20px;
 }
 
 .explications {
