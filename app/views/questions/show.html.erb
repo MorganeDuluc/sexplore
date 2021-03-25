@@ -8,7 +8,7 @@
     <%= image_tag 'informafion-1.png', class: "img-fion-small" %>
   </div>
 
-  <div class="responses">
+  <div class="section-center">
     <%= simple_form_for @question, url: question_path(@question.id), method: :get do |f| %>
       <%= simple_fields_for :answer do |answer_f| %>
         <%= answer_f.input :response_id,
@@ -17,9 +17,11 @@
         legend: false,
         collection: @question.responses.map {|response| [response.content, response.id]} %>
       <% end %>
-      <div class="fixed">
-        <%= f.submit "Je valide ma réponse", class: 'btn-blue' do %>
+
+      <div class="section-center">
+        <%= f.submit "Je valide ma réponse", class: 'btn-blue-question' do %>
       </div>
+
   </div>
       <% end %>
     <% end %>
