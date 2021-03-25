@@ -11,7 +11,7 @@
   </div>
 
   <div class="quiz-side">
-    <h3>Bienvenue dans le thème: <strong><%= @theme.name %></strong></h3>
+    <h3>Bienvenue dans le quiz: <strong><%= @theme.name %></strong></h3>
     <% @quizzes.each do |quiz| %>
     <% if quiz.finished == true %>
         <div class="card-quiz-unlock">
