@@ -1,6 +1,6 @@
 .form-check {
   width: 335px;
-  height: 80px;
+  min-height: 80px;
   background-color: #F2B69E;
   margin-top: 18px;
   border: solid 1px #8CCDF3;
@@ -11,6 +11,19 @@
   display: flex;
   text-align: left;
   align-items: center;
+}
+
+.form-check-input {
+  position: absolute;
+  transform: scale(0);
+}
+
+.form-check-input + label {
+  cursor: pointer;
+}
+
+.form-check-input:checked + label {
+  color: #9C6274;
 }
 
 .explications {
@@ -34,16 +47,3 @@
   border-color: #FA26A0;
 }
 
-.form-check-input {
-  position: absolute;
-  transform: scale(0);
-
-}
-
-.form-check-input + label {
-  cursor: pointer;
-}
-
-.form-check-input:checked + label {
-  color: #9C6274;
-}
