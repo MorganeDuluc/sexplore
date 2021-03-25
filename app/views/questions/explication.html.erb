@@ -3,33 +3,38 @@
     <h3><%="Confidence n°#{@question.order}"%></h3>
   </div>
 
-  <div class="card-chat-question-1">
+  <div class="card-chat-question">
     <p>Tout à fait !</p>
+  </div>
+  <%= image_tag 'informafion-1.png', class: "img-fion-small" %>
+
+    <div class="explications right">
+      <%= @question.explication %>
     </div>
-      <%= image_tag 'informafion-1.png', class: "img-fion-small" %>
-      <div class="explications right">
-        <%= @question.explication %>
-          </div>
-          <% if @question.order < 5 %>
-            <%= link_to 'Question suivante', question_path(@next_question), class: 'btn-blue-explications'%>
-          <% elsif @question.order == 5 %>
-          <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz), class: 'btn-blue-explications'%>
-      <% end %>
+  <div class="section-center">
+    <% if @question.order < 5 %>
+      <%= link_to 'Question suivante', question_path(@next_question), class: 'btn-blue-question'%>
+    <% elsif @question.order == 5 %>
+      <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz), class: 'btn-blue-question'%>
+    <% end %>
     <% else %>
     <div class="question-part">
       <h3><%="Confidence n°#{@question.order}"%></h3>
     </div>
+  </div>
 
-    <div class="card-chat-question-1">
+    <div class="card-chat-question">
       <p>Pas vraiment ...</p>
     </div>
-      <%= image_tag 'informafion-1.png', class: "img-fion-small" %>
-      <div class="explications wrong">
-        <%= @question.explication %>
-        </div>
-          <% if @question.order < 5 %>
-            <%= link_to 'Question suivante', question_path(@next_question), class: 'btn-blue-explications'%>
-          <% elsif @question.order == 5 %>
-          <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz), class: 'btn-blue-explications'%>
-        <% end %>
+    <%= image_tag 'informafion-1.png', class: "img-fion-small" %>
+    <div class="explications wrong">
+      <%= @question.explication %>
+    </div>
+  <div class="section-center">
+    <% if @question.order < 5 %>
+      <%= link_to 'Question suivante', question_path(@next_question), class: 'btn-blue-question section-center'%>
+    <% elsif @question.order == 5 %>
+      <%= link_to 'Terminer', quiz_end_quiz_path(@question.quiz), class: 'btn-blue-question section-center'%>
     <% end %>
+  </div>
+<% end %>

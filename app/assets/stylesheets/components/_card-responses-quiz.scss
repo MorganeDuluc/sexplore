@@ -18,32 +18,10 @@
   transform: scale(0);
 }
 
-.form-check-input + label {
+.form-check-input+label {
   cursor: pointer;
 }
 
-.form-check-input:checked + label {
+.form-check-input:checked+label {
   color: #9C6274;
 }
-
-.explications {
-  margin-top: 20px;
-  background-color: #F2B69E;
-  width: 335px;
-  margin-left: 20px;
-  border-radius: 8px;
-  padding: 10px;
-  color: white;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
-
-.right {
-  border: solid 2px;
-  border-color: #28DF99;
-}
-
-.wrong {
-  border: solid 2px;
-  border-color: #FA26A0;
-}
-
