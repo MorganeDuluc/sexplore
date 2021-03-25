@@ -6,11 +6,16 @@
 
 <div style="margin-top: 320px; text-align: center;">
   <div class="container">
-  <div class="d-flex justify-content-center">
-    <h3>Félicitations <%= @current_user.pseudo %> </h3>
-    <div id="<%= @current_user.avatar%>" style="height: 32px; width: 32px; margin-left: 8px;"></div>
-  </div>
-  <div>
+    <div class="congrats">
+      <div class="congrats-title">
+        <h3>Félicitations</h3>
+      </div>
+      <div class="congrats-user">
+        <%= @current_user.pseudo %>
+      </div>
+      <div id="<%= @current_user.avatar%>" style="height: 32px; width: 32px; margin-left: 8px;"></div>
+    </div>
+  <div class="congrats-text">
       <p>Tu en sais maintenant un peu plus sur <%= @quiz.title.downcase %>.</p>
       <p>Tu as la possibilité de refaire le quiz si tu veux revoir des notions. J'espère en tous cas que tu y vois plus clair ! &#x1F609; </p>
   </div>
