@@ -1,9 +1,9 @@
 .form-check {
   width: 335px;
   min-height: 80px;
-  background-color: #F2B69E;
+  background-color: $peach;
   margin-top: 18px;
-  border: solid 1px #8CCDF3;
+  border: solid 1px $blue-btn;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   color: white;
@@ -23,5 +23,5 @@
 }
 
 .form-check-input:checked+label {
-  color: #9C6274;
+  color: $pourpre;
 }

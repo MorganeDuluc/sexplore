@@ -1,6 +1,6 @@
 //bs home1 + login
 .btn-blue-home {
-  background-color: #8CCDF3;
+  background-color: $blue-btn;
   box-shadow: 0px 4px 24px #D4D4D4;
   width: 200px;
   height: 55px;
@@ -8,6 +8,7 @@
   padding: 14px 22px;
   color: white;
   font-size: 16px;
+  font-weight: 500;
   margin-top: 50px;
   margin-bottom: 90px;
   font-family: 'Maven Pro', sans-serif;
@@ -16,22 +17,23 @@
 
 //btns questions
 .btn-grey-question {
-  background-color: #C0C0C0;
+  background-color: #969696;
   box-shadow: 0px 4px 24px #D4D4D4;
   width: 200px;
   height: 55px;
   border-radius: 16px;
   padding: 14px 21px;
-  color: grey;
+  color: #696969;
   font-size: 16px;
   font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
   margin-top: 20px;
   text-align: center;
   border: none;
 }
 
 .btn-blue-question {
-  background-color: #8CCDF3;
+  background-color: $blue-btn;
   box-shadow: 0px 4px 24px #D4D4D4;
   width: 200px;
   height: 55px;
@@ -40,6 +42,7 @@
   color: white;
   font-size: 16px;
   font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
   margin-top: 20px;
   text-align: center;
   border: none;
@@ -57,7 +60,7 @@
 
 //page sign-up btn sign-up
 #btn-je-minscris {
-  background-color: #8CCDF3;
+  background-color: $blue-btn;
   box-shadow: 0px 4px 24px #D4D4D4;
   width: 158px;
   height: 53px;
@@ -65,6 +68,7 @@
   padding: 14px 22px;
   margin-top: 38px;
   font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   color: white;
   text-align: center;
@@ -74,7 +78,7 @@
 #btn-deja-inscrit {
   background-color: white;
   box-shadow: 0px 4px 24px #D4D4D4;
-  border: 1px solid #8CCDF3;
+  border: 1px solid $blue-btn;
   border-radius: 16px;
   width: 158px;
   height: 53px;
@@ -82,8 +86,9 @@
   margin-top: 38px;
   margin-left: 20px;
   font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  color: #8CCDF3;
+  color: $blue-btn;
   text-align: center;
 }
 
