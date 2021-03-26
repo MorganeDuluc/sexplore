@@ -1,6 +1,8 @@
 .card-search-video {
-  background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url("video-img.png");
-  background-size: auto;
+  background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url("video-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
   width: 100%;
   height: 230px;
@@ -15,7 +17,7 @@
   margin-left: 160px;
   margin-top: 80px;
 }
-
+//
 .congrats {
   display: flex;
   justify-content: center;
