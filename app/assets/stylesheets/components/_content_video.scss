@@ -10,7 +10,29 @@
   margin-top: 30px;
 }
 
-.card-video {
+.card-video1 {
+  background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url("video1.png");
+  background-size: cover;
+  width: 335px;
+  height: 220px;
+  border: 1px solid #B6E2FC;
+  border-radius: 16px;
+  margin-top: 30px;
+}
+
+.card-video2 {
+  background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url("video2.png");
+  background-size: cover;
+  width: 335px;
+  height: 220px;
+  border: 1px solid #B6E2FC;
+  border-radius: 16px;
+  margin-top: 30px;
+}
+
+.card-video3 {
+  background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url("video-img.jpg");
+  background-size: cover;
   width: 335px;
   height: 220px;
   border: 1px solid #B6E2FC;
